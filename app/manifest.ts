@@ -1,0 +1,50 @@
+import { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "AA Marketing",
+    short_name: "AA Marketing",
+    description:
+      "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#212428",
+    theme_color: "#3a69ff",
+    prefer_related_applications: false,
+    orientation: "portrait",
+    scope: "/",
+    categories: ["business", "productivity", "web development"],
+    icons: [
+      {
+        src: "/assets/logo-192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
+        src: "/assets/logo-512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
+        src: "/assets/logo.webp",
+        sizes: "1024x1024",
+        type: "image/png",
+        purpose: "any",
+      },
+    ],
+    shortcuts: [
+      {
+        name: "Contact Us",
+        url: "/contact",
+        description: "Get in touch with us",
+      },
+      {
+        name: "Our Services",
+        url: "/services",
+        description: "View our services",
+      },
+    ],
+  };
+}
