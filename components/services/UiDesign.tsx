@@ -187,7 +187,7 @@ export default function UiUxDesignService() {
             question: "Do you only design, or also implement the designs?",
             answer: (
               <>
-                We primarily focus on design, but we also collaborate with developers closely. If you need implementation, we've got devs in-house who can handle that too.
+                We primarily focus on design, but we also collaborate with developers closely. If you need implementation, we&apos;ve got devs in-house who can handle that too.
               </>
             ),
           },

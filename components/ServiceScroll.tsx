@@ -215,7 +215,7 @@ const ServiceScroll = () => {
             
             {/* Mobile cards - simplified version */}
             <div className="lg:hidden space-y-6">
-              {services.map((service, index) => (
+              {services.map((service) => (
                 <div 
                   key={service.id}
                   className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50"

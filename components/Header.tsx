@@ -2,9 +2,7 @@
 
 import type React from "react";
 
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import Logo from "../public/assets/logo.png";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { CgClose, CgMenuRight } from "react-icons/cg";

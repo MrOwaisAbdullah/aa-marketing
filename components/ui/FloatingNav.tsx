@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,6 +7,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useState } from "react";
 
 export const FloatingNav = ({
   navItems,

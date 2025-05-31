@@ -93,7 +93,7 @@ const Testimonials = () => {
                   className="transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateY(-${currentIndex * 320}px)` }}
                 >
-                  {testimonials.map((testimonial, index) => (
+                  {testimonials.map((testimonial) => (
                     <div
                       key={testimonial.id}
                       className="h-80 flex flex-col justify-center"
@@ -173,7 +173,7 @@ const Testimonials = () => {
                   className="transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateY(-${currentIndex * 320}px)` }}
                 >
-                  {testimonials.map((testimonial, index) => (
+                  {testimonials.map((testimonial) => (
                     <div
                       key={testimonial.id}
                       className="h-80 flex flex-col justify-center"
@@ -181,7 +181,7 @@ const Testimonials = () => {
                       <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-slate-600/50 shadow-2xl">
                         <CardContent className="p-8">
                           <blockquote className="text-gray-200 text-xl leading-relaxed italic mb-6">
-                            "{testimonial.quote}"
+                            &quot;{testimonial.quote}&quot;
                           </blockquote>
 
                           <div className="flex items-center justify-between">
@@ -253,7 +253,7 @@ const Testimonials = () => {
               <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-slate-600/50 shadow-2xl">
                 <CardContent className="p-4 sm:p-6 md:p-8">
                   <blockquote className="text-gray-200 text-sm sm:text-base md:text-xl leading-relaxed italic mb-4 md:mb-6">
-                    "{currentTestimonial.quote}"
+                    &quot;{currentTestimonial.quote}&quot;
                   </blockquote>
 
                   <div className="flex items-center justify-between">

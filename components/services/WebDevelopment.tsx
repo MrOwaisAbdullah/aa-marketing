@@ -187,7 +187,7 @@ export default function WebDevelopmentService() {
             question: "How long does a website project take?",
             answer: (
               <>
-                It depends on the scope. A standard business site can take 4-6 weeks, while larger builds (e.g. e-commerce) can take 8-12 weeks. We'll give you a timeline before starting.
+                It depends on the scope. A standard business site can take 4-6 weeks, while larger builds (e.g. e-commerce) can take 8-12 weeks. We&apos;ll give you a timeline before starting.
               </>
             ),
           },
@@ -203,7 +203,7 @@ export default function WebDevelopmentService() {
             question: "What happens after the site goes live?",
             answer: (
               <>
-                We stick around. Our support includes maintenance, security checks, speed optimization, and updates — we've got you covered long-term.
+                We stick around. Our support includes maintenance, security checks, speed optimization, and updates — we&apos;ve got you covered long-term.
               </>
             ),
           },
