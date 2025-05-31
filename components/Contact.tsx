@@ -189,7 +189,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center text-center justify-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-black/20 hover:via-accent hover:to-black/30 py-4 px-8 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold"
+                className="w-full flex items-center text-center justify-center text-white bg-gradient-to-br from-black/20 via-primary to-[#a54a4a] hover:via-accent hover:to-black/30 py-4 px-8 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold"
               >
                 {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
               </button>

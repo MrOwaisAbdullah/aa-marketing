@@ -116,7 +116,7 @@ const Header = () => {
         "flex-col",
         "left-0",
         "top-[50px]",
-        "bg-background",
+        "bg-black/30",
         "z-50",
         "backdrop-blur-sm",
       ];
@@ -136,7 +136,7 @@ const Header = () => {
   }
 
   return (
-    <header className="relative top-0 left-0 right-0 z-50 mx-auto pt-6 -my-4 sm:my-0 sm:py-1 max-h-20 sm:max-h-none font-poppins bg-black/30 backdrop-blur-sm">
+    <header className="relative top-0 left-0 right-0 z-50 mx-auto py-5 -my-4 sm:my-0 sm:py-1 max-h-24 sm:max-h-none font-poppins bg-black/30 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between pt-2 px-3 sm:p-3 flex-col lg:flex-row z-50 relative">
         <div className="flex justify-between items-center">
           <ThemeLogo />

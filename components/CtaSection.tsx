@@ -14,7 +14,7 @@ export default function CtaSection({
   buttonText,
   buttonLink,
 }: CtaSectionProps) {
-  return (    <section className="py-20 pb-24 relative overflow-visible bg-gradient-to-t from-purple-700/90 via-accent to-transparent rounded-t-[50px] border-t border-t-border">
+  return (    <section className="py-20 pb-24 relative overflow-y-visible bg-gradient-to-t from-purple-700/90 via-accent to-transparent rounded-t-[50px] border-t border-t-border">
       {/* Grid Background Pattern */}
       <div
         className="absolute inset-0 w-full h-full"
@@ -42,7 +42,7 @@ export default function CtaSection({
               {paragraph}
             </p>
             <Link href={buttonLink}>
-              <button className="font-poppins text-white bg-gradient-to-bl from-accent via-primary to-blue-700 hover:from-accent py-3 px-8 rounded-full font-medium md:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
+              <button className="font-poppins text-white bg-gradient-to-bl from-purple-600/50 via-primary to-primary2 hover:from-accent py-3 px-8 rounded-full font-medium md:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
                 {buttonText}
               </button>
             </Link>

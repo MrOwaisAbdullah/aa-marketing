@@ -28,7 +28,7 @@ const Hero = () => {
           }}
         ></motion.div>
         
-        <div className="max-w-7xl mx-auto flex px-5 pt-40 py-10 md:flex-row flex-col items-center">
+        <div className="max-w-7xl mx-auto flex px-5 pt-52 py-10 md:flex-row flex-col items-center">
           <div className="sm:entrance-left lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center lg:w-3/5">
             <h2 className="title-font sm:text-lg text-base font-semibold mb-1 font-montserrat capitalize text-text">
               Not just another digital agency.
@@ -66,8 +66,8 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/projects" className="scroll-smooth duration-300">
-                <button className="group flex items-center border-2 border-primary/20 hover:border-primary/40 text-text hover:text-primary py-2 bg-background/30 rounded-full font-medium text-lg px-8">
+              <Link href="/projects" className="flex justify-center items-center scroll-smooth duration-300">
+                <button className="group flex items-center justify-center border-2 border-primary/20 hover:border-primary/40 text-text hover:text-primary py-2 bg-background/30 rounded-full font-medium text-lg px-8">
                   See Our Work
                 </button>
               </Link>
