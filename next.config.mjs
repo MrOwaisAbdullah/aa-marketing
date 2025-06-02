@@ -43,7 +43,8 @@ const nextConfig = {
   webpack: (config, { dev, isServer }) => {
     config.optimization = {
       ...config.optimization,
-      minimize: true,      splitChunks: {
+      minimize: true,
+      splitChunks: {
         chunks: "all",
         maxInitialRequests: 25,
         minSize: 10000,
@@ -88,9 +89,11 @@ const nextConfig = {
     return [
       {
         source: "/:path*",
-        headers: [          {
+        headers: [
+          {
             key: "Link",
-            value: "/_next/static/chunks/vendors.js; rel=preload; as=script, /_next/static/chunks/components.js; rel=preload; as=script",
+            value:
+              "/_next/static/chunks/vendors.js; rel=preload; as=script, /_next/static/chunks/components.js; rel=preload; as=script",
           },
           {
             key: "X-DNS-Prefetch-Control",

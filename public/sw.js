@@ -5,7 +5,8 @@ const ASSETS_TO_CACHE = [
   "/offline",
   "/assets/logo.webp",
   "/assets/logo-192.png",
-  "/assets/logo-512.png",  "/_next/static/chunks/vendors.js",
+  "/assets/logo-512.png",
+  "/_next/static/chunks/vendors.js",
   "/_next/static/chunks/components.js",
   "/_next/static/css/*.css",
 ];
