@@ -1,3 +1,9 @@
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -70,7 +76,7 @@ const nextConfig = {
       config.cache = {
         type: "filesystem",
         version: "1.0.0",
-        cacheDirectory: ".next/cache/webpack",
+        cacheDirectory: resolve(__dirname, ".next/cache/webpack"),
         store: "pack",
         compression: "gzip",
       };
