@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
   Facebook,
@@ -9,6 +10,8 @@ import {
   Twitter,
 } from "lucide-react";
 import ThemeLogo from "./ui/ThemeLogo";
+import ThemeSwitcher from "./ui/ThemeSwitcher";
+import { useTheme } from "@/context/ThemeContext";
 
 export default function Footer() {
   return (
@@ -202,10 +205,18 @@ export default function Footer() {
                   href="/services"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
+                  {" "}
                   Our Services
                 </Link>
               </li>
             </ul>
+
+            <div className="flex items-center space-x-3 pt-4">
+              <ThemeSwitcher />
+              <span className="text-sm text-white/80">
+                Toggle {useTheme().theme === "light" ? "Dark" : "Light"} Mode
+              </span>
+            </div>
           </div>
         </div>
 

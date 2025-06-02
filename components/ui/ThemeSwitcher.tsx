@@ -9,13 +9,13 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-14 h-7 rounded-full bg-background2 backdrop-blur-sm flex items-center transition duration-300 focus:outline-none shadow relative"
+      className="w-12 h-6 rounded-full bg-background  backdrop-blur-sm flex items-center transition duration-300 focus:outline-none shadow relative"
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
     >
       <div
         className={`w-7 h-7 absolute flex justify-center items-center rounded-full transition-all duration-500 transform ${
           theme === "light"
-            ? "bg-yellow-500 -translate-x-2"
+            ? "bg-yellow-500 -translate-x-1"
             : "bg-accent translate-x-full"
         } p-1 text-white`}
       >
