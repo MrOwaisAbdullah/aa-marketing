@@ -19,7 +19,7 @@ export default function FaqSection({ title, headingHighlight, faqs }: FaqSection
         <FadeInSection>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 font-montserrat text-text">
-              {title} <span className="text-accent">{headingHighlight}</span>
+              {title} <span className="text-[#6a59ee]">{headingHighlight}</span>
             </h2>
 
             <Accordion type="single" collapsible className="space-y-4">

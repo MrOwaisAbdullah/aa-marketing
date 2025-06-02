@@ -292,7 +292,7 @@ const Testimonials = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${
                   index === currentIndex
-                    ? "bg-accent"
+                    ? "bg-[#6a59ee]"
                     : "bg-slate-400 hover:bg-slate-600"
                 }`}
               />

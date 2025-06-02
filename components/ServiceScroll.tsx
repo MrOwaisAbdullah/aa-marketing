@@ -230,7 +230,7 @@ const ServiceScroll = () => {
             </p>
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-8 leading-tight">
               Discover Our
-              <span className="block bg-gradient-to-r from-[#dc5b5b] to-accent bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#dc5b5b] to-[#6a59ee] bg-clip-text text-transparent">
                 Expertise
               </span>
               as a Marketing Agency
@@ -278,7 +278,7 @@ const ServiceScroll = () => {
                   className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50"
                 >
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="min-w-10 max-w-10 h-8 bg-gradient-to-br from-[#dc5b5b] to-accent rounded-lg flex items-center justify-center">
+                    <div className="min-w-10 max-w-10 h-8 bg-gradient-to-br from-[#dc5b5b] to-[#6a59ee] rounded-lg flex items-center justify-center">
                       <service.icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 className="text-md font-semibold text-white">

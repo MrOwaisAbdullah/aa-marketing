@@ -42,7 +42,7 @@ export default function ServiceCard({ image, description, link, buttonText="Read
       <CardContent className="p-6">
         <p className="mb-4 text-text/80">{description}</p>
 
-        <Link href={link} className="group inline-flex items-center text-accent hover:text-primary transition-all">
+        <Link href={link} className="group inline-flex items-center text-[#6a59ee] hover:text-primary transition-all">
           <span className="mr-2 font-medium">{buttonText}</span>
           <ArrowRight
             className={cn("h-4 w-4 transition-all duration-300", isHovered ? "translate-x-1" : "translate-x-0")}

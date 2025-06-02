@@ -31,7 +31,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
         {/* Icon and content */}
         <div className="flex-1">
           <div className="flex items-center gap-4 mb-4">
-            <div className="min-w-14 max-w-14 h-12 bg-gradient-to-br from-[#dc5b5b] to-accent rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="min-w-14 max-w-14 h-12 bg-gradient-to-br from-[#dc5b5b] to-[#6a59ee] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Icon className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-white transition-colors duration-300">

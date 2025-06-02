@@ -6,13 +6,13 @@ const HeroContent = () => {
   return (
             <div className="max-w-7xl mx-auto flex px-5 pt-52 py-10 md:flex-row flex-col items-center">
           <div className="sm:entrance-left lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center lg:w-3/5">
-            <h2 className="title-font sm:text-lg text-base font-semibold mb-1 font-montserrat capitalize text-white/80">
+            <h2 className="title-font sm:text-lg text-base font-semibold mb-1 font-montserrat capitalize text-white/90">
               Not just another digital agency.
             </h2>
             <div className="">
               <h1 className="sm:text-5xl text-4xl mb-4 font-montserrat font-bold text-white">
                 We Build
-                <span className="text-[#CF5865]"> Brands & Businesses</span> That
+                <span className="text-primary"> Brands & Businesses</span> That
                 <br />
                 <span className="">
                   <Typewriter
@@ -48,7 +48,7 @@ const HeroContent = () => {
                 </button>
               </Link>
               <Link href="/contact" className="scroll-smooth duration-300">
-                <button className="group items-center text-center justify-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-black/40 hover:via-accent hover:to-black/30 py-2 px-8 rounded-full font-medium text-lg transition-all duration-300 transform shadow-lg shadow-primary/20">
+                <button className="group items-center text-center justify-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-black/40 hover:from-purple-800 hover:via-[#6a59ee] hover:to-black/30 py-2 px-8 rounded-full font-medium text-lg transition-all duration-300 transform shadow-lg shadow-primary/20">
                   Get a Free Consultation
                 </button>
               </Link>

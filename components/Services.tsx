@@ -133,7 +133,7 @@ const Services = ({
               <button
                 onClick={handleLoadMore}
                 disabled={isLoading}
-                className="font-poppins flex items-center text-center justify-center text-white bg-primary hover:bg-accent py-2 px-6 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold disabled:opacity-70"
+                className="font-poppins flex items-center text-center justify-center text-white bg-primary hover:bg-[#6a59ee] py-2 px-6 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold disabled:opacity-70"
               >
                 {isLoading ? (
                   <>

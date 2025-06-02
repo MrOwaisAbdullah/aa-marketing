@@ -16,7 +16,7 @@ export default function ThemeSwitcher() {
         className={`w-7 h-7 absolute flex justify-center items-center rounded-full transition-all duration-500 transform ${
           theme === "light"
             ? "bg-yellow-500 -translate-x-1"
-            : "bg-accent translate-x-full"
+            : "bg-[#6a59ee] translate-x-full"
         } p-1 text-white`}
       >
         {theme === "light" ? (

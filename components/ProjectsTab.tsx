@@ -68,7 +68,7 @@ const ProjectTabs = ({
                 key={category}
                 value={category}
                 onClick={() => setSelectedTab(category)}
-                className="px-4 py-2 rounded-lg bg-background data-[state=active]:bg-accent data-[state=active]:text-white text-text hover:bg-primary/10 hover:text-primary transition-all duration-300 border border-border"
+                className="px-4 py-2 rounded-lg bg-background data-[state=active]:bg-[#6a59ee] data-[state=active]:text-white text-text hover:bg-primary/10 hover:text-primary transition-all duration-300 border border-border"
               >
                 {category}
               </TabsTrigger>
@@ -125,7 +125,7 @@ const ProjectTabs = ({
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group inline-flex items-center text-accent transition-all hover:text-primary"
+                            className="group inline-flex items-center text-[#6a59ee] transition-all hover:text-primary"
                           >
                             <span className="font-poppins mr-2 font-medium">
                               Learn more
@@ -150,7 +150,7 @@ const ProjectTabs = ({
                   <button
                     onClick={loadMore}
                     disabled={isLoading}
-                    className="font-poppins flex items-center text-center justify-center text-white bg-primary hover:bg-accent py-2 px-6 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold disabled:opacity-70"
+                    className="font-poppins flex items-center text-center justify-center text-white bg-primary hover:bg-[#6a59ee] py-2 px-6 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold disabled:opacity-70"
                   >
                     {isLoading ? (
                       <>

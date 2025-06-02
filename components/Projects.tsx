@@ -57,7 +57,7 @@ const Projects = ({ service }: { service: ServiceType }) => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center text-accent transition-all hover:text-primary"
+                  className="group inline-flex items-center text-[#6a59ee] transition-all hover:text-primary"
                 >
                   <span className="font-poppins mr-2 font-medium">Learn more</span>
                   <ArrowRight
