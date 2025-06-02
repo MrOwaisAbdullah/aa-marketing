@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://aamarktng.com/services/web-development",
     images: [
       {
-        url: "/assets/services/web-development.jpg",
+        url: "https://aamarktng.com/assets/services/web-development.jpg",
         width: 1200,
         height: 630,
         alt: "Web Development Services - AA Marketing",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Web Development Services | AA Marketing",
     description:
       "Professional web development services to create modern, fast, and responsive websites for your business.",
-    images: ["/assets/services/web-development.jpg"],
+    images: ["https://aamarktng.com/assets/services/web-development.jpg"],
   },
   alternates: {
     canonical: "/services/web-development",

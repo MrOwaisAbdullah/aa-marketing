@@ -106,12 +106,12 @@ export default function Hero() {
 
         {/* Column 2 - Moving Down */}
         <div className="flex-shrink-0 w-56 sm:w-72 transform rotate-12">
-          <Column cards={column2Cards} direction="down" delay={2} />
+          <Column cards={column2Cards} direction="down" delay={1} />
         </div>
 
         {/* Column 3 - Moving Up */}
         <div className="flex-shrink-0 w-56 sm:w-72 transform rotate-12">
-          <Column cards={column3Cards} direction="up" delay={4} />
+          <Column cards={column3Cards} direction="up" delay={0} />
         </div>
       </div>
 

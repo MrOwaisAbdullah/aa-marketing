@@ -10,10 +10,9 @@ export const metadata: Metadata = {
     title: "Digital Marketing Services | AA Marketing",
     description:
       "Comprehensive digital marketing solutions to grow your online presence. SEO, social media, content marketing, and more.",
-    url: "https://aamarktng.com/services/digital-marketing",
-    images: [
+    url: "https://aamarktng.com/services/digital-marketing",    images: [
       {
-        url: "/assets/services/digital-marketing.jpg",
+        url: "https://aamarktng.com/assets/services/digital-marketing.jpg",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Services - AA Marketing",
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     title: "Digital Marketing Services | AA Marketing",
     description:
       "Comprehensive digital marketing solutions to grow your online presence. SEO, social media, content marketing, and more.",
-    images: ["/assets/services/digital-marketing.jpg"],
+    images: ["https://aamarktng.com/assets/services/digital-marketing.jpg"],
   },
   alternates: {
     canonical: "/services/digital-marketing",

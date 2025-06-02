@@ -23,7 +23,7 @@ export default function ServiceHeroSection({
   buttonLink,
 }: AnimatedCtaProps) {
   return (
-    <section className="relative bg-gradient-to-t from-accent to-transparent backdrop-blur-sm overflow-hidden md:pt-24 pt-8 pb-20 rounded-b-[50px] border-b border-b-border">
+    <section className="relative bg-gradient-to-t from-[#6a59ee] to-transparent backdrop-blur-sm overflow-hidden md:pt-24 pt-8 pb-20 rounded-b-[50px] border-b border-b-border">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <motion.div
@@ -187,12 +187,12 @@ export default function ServiceHeroSection({
             <br />
             <span className="text-white">{heading2}</span>
           </h1>
-          <p className="text-gray-900 text-center max-w-3xl mx-auto mb-10 text-lg font-poppins">
+          <p className="text-white/90 text-center max-w-3xl mx-auto mb-10 text-lg font-poppins">
             {paragraph}
           </p>
           <div className="flex justify-center">
             <Link href={buttonLink}>
-              <button className="font-poppins text-white bg-gradient-to-bl from-accent via-primary to-blue-700 hover:from-accent py-3 px-8 rounded-full font-medium md:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
+              <button className="font-poppins text-white bg-gradient-to-bl from-accent via-primary to-transparent hover:from-[#6a59ee] py-3 px-8 rounded-full font-medium md:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
                 {buttonText}
               </button>
             </Link>

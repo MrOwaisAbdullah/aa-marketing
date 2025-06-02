@@ -6,8 +6,7 @@ export default function Loading() {
     <div className="min-h-screen flex flex-col items-center justify-center backdrop-blur-md bg-background">
       <div className="relative w-24 h-24 mb-8">
         <Image
-          src="/assets/logo.webp"
-          alt="Burraq Digits Logo"
+          src="/assets/logo.webp"            alt="AA Marketing Logo"
           width={300}
           height={150}
           className="w-full h-full object-contain animate-pulse"

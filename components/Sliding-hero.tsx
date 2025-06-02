@@ -5,7 +5,7 @@ import HeroContent from "./ui/hero-content"
 
 export default function SlidingHero() {
   return (
-    <div className="relative -top-[90px] min-h-screen w-full overflow-hidden bg-gradient-to-br from-primary via-accent to-indigo-900">
+    <div className="relative -top-[90px] min-h-screen pb-20 w-full overflow-hidden bg-gradient-to-br from-primary via-accent to-indigo-900">
       {/* Moving Columns Background */}
       <div className="absolute inset-0 z-0">
         <HeroSlides />

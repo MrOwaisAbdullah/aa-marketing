@@ -125,7 +125,7 @@ export default function OutdoorMarketingService() {
       {/* Why Choose Us */}
       <WhyChooseUsSection
         mainTitle="Why Outdoor Campaigns Work with"
-        titleName="Burraq Digits"
+        titleName="AA Marketing"
         titleFor="Outdoor Marketing"
         benefits={[
           {

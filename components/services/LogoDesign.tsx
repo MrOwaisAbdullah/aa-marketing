@@ -25,20 +25,25 @@ export default function LogoDesignService() {
         heading="Branding Starts With a Bold"
         headingHighlight="Logo"
         heading2="Let Your Identity Speak Clearly"
-        paragraph="Your logo is the face of your brand — make sure it&apos;s saying the right thing. We design logos that are sharp, versatile, and unforgettable."
+        paragraph="Your logo is the face of your brand — make sure it's saying the right thing. We design logos that are sharp, versatile, and unforgettable."
         buttonText="GET STARTED WITH LOGO DESIGN"
         buttonLink="/contact"
       />
-
       {/* Main Services Section */}
       <section className="max-w-7xl mx-auto py-20">
         <div className="px-4">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat text-text">
-              Stand Out From the Start with <span className="text-primary">Logo Designs</span> That Speak Volumes
+              Stand Out From the Start with{" "}
+              <span className="text-primary">Logo Designs</span> That Speak
+              Volumes
             </h2>
             <p className="text-text/80 mb-16 max-w-3xl text-lg font-poppins">
-              A great logo makes people remember you. At Burraq Digits, we design visual identities that are clean, scalable, and instantly recognizable. Whether you&apos;re starting fresh or refreshing your look - we&apos;ll make sure you&apos;re making the right first impression.
+              A great logo makes people remember you. At AA Marketing, we design
+              visual identities that are clean, scalable, and instantly
+              recognizable. Whether you&apos;re starting fresh or refreshing
+              your look - we&apos;ll make sure you&apos;re making the right
+              first impression.
             </p>
           </FadeInSection>
 
@@ -61,7 +66,7 @@ export default function LogoDesignService() {
               <ServiceCard
                 icon={Palette}
                 title="Color Psychology & Typography"
-                description="We choose colors and fonts that support your brand&apos;s personality and connect with your audience."
+                description="We choose colors and fonts that support your brand's personality and connect with your audience."
               />
             </FadeInSection>
 
@@ -93,13 +98,12 @@ export default function LogoDesignService() {
               <ServiceCard
                 icon={Asterisk}
                 title="Logo Refresh"
-                description="Already have a logo? We&apos;ll modernize and refine it while keeping your identity intact."
+                description="Already have a logo? We'll modernize and refine it while keeping your identity intact."
               />
             </FadeInSection>
           </div>
         </div>
       </section>
-
       {/* Our Projects Section */}
       {/* <section className="max-w-7xl mx-auto py-20 px-4">
         <FadeInSection>
@@ -113,32 +117,35 @@ export default function LogoDesignService() {
           <Projects service="Logo Design" />
         </FadeInSection>
       </section> */}
-
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us Section */}{" "}
       <WhyChooseUsSection
         mainTitle="Why Brands Trust"
-        titleName="Burraq Digits"
+        titleName="AA Marketing"
         titleFor="Logo Design"
         benefits={[
           {
             icon: <CheckCircle size={20} />,
             title: "Strategic, Not Just Stylish",
-            description: "We design with intention — every shape, color, and element has a purpose.",
+            description:
+              "We design with intention — every shape, color, and element has a purpose.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Tailored To You",
-            description: "We don't do cookie-cutter logos. Your brand gets its own visual identity.",
+            description:
+              "We don't do cookie-cutter logos. Your brand gets its own visual identity.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Ready for All Formats",
-            description: "Print, digital, merchandise — your logo will work everywhere it needs to.",
+            description:
+              "Print, digital, merchandise — your logo will work everywhere it needs to.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Quick Turnaround",
-            description: "We move fast without compromising on quality or creativity.",
+            description:
+              "We move fast without compromising on quality or creativity.",
           },
         ]}
         featuresRight={[
@@ -161,7 +168,6 @@ export default function LogoDesignService() {
           buttonLink: "/contact",
         }}
       />
-
       {/* FAQ Section */}
       <FaqSection
         title="Logo Design"
@@ -171,7 +177,9 @@ export default function LogoDesignService() {
             question: "How many logo concepts do I get?",
             answer: (
               <>
-                Typically, we start with 2-3 initial logo concepts based on your brand brief. From there, we narrow down to the final version with your feedback and revisions.
+                Typically, we start with 2-3 initial logo concepts based on your
+                brand brief. From there, we narrow down to the final version
+                with your feedback and revisions.
               </>
             ),
           },
@@ -179,7 +187,9 @@ export default function LogoDesignService() {
             question: "Will I get the original files?",
             answer: (
               <>
-                Absolutely. You&apos;ll receive all necessary files including vector formats (AI, EPS, SVG), PNGs, and JPGs — ready for web, print, and everything else.
+                Absolutely. You&apos;ll receive all necessary files including
+                vector formats (AI, EPS, SVG), PNGs, and JPGs — ready for web,
+                print, and everything else.
               </>
             ),
           },
@@ -187,7 +197,8 @@ export default function LogoDesignService() {
             question: "Can you redesign or update my current logo?",
             answer: (
               <>
-                Yes! If your current logo needs a refresh, we can modernize it while keeping its core identity intact.
+                Yes! If your current logo needs a refresh, we can modernize it
+                while keeping its core identity intact.
               </>
             ),
           },
@@ -195,7 +206,9 @@ export default function LogoDesignService() {
             question: "Do you provide brand guidelines with the logo?",
             answer: (
               <>
-                Yes. Every logo package includes a basic style guide with color codes, font usage, and clear rules on how to use your logo properly.
+                Yes. Every logo package includes a basic style guide with color
+                codes, font usage, and clear rules on how to use your logo
+                properly.
               </>
             ),
           },
@@ -203,17 +216,18 @@ export default function LogoDesignService() {
             question: "How long does it take to complete a logo?",
             answer: (
               <>
-                The timeline varies depending on feedback loops, but most logo design projects take around 7-10 business days from start to final delivery.
+                The timeline varies depending on feedback loops, but most logo
+                design projects take around 7-10 business days from start to
+                final delivery.
               </>
             ),
           },
         ]}
       />
-
       {/* CTA Section */}
       <CtaSection
-        title="Let&apos;s Design a Logo That Actually Means Something"
-        paragraph="If your logo doesn&apos;t tell your story in one glance — it&apos;s time to fix that. Reach out to us for a visual identity that connects instantly."
+        title="Let's Design a Logo That Actually Means Something"
+        paragraph="If your logo doesn't tell your story in one glance — it's time to fix that. Reach out to us for a visual identity that connects instantly."
         buttonText="GET STARTED WITH LOGO DESIGN"
         buttonLink="/contact"
       />

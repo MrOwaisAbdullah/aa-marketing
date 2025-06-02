@@ -28,16 +28,18 @@ export default function EventsManagementService() {
         buttonText="START PLANNING WITH US"
         buttonLink="/contact"
       />
-
       {/* Main Services Section */}
       <section className="max-w-7xl mx-auto py-20">
         <div className="px-4">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat">
-              End-to-End <span className="text-primary">Event Management</span> That Actually Delivers
+              End-to-End <span className="text-primary">Event Management</span>{" "}
+              That Actually Delivers
             </h2>
             <p className="text-gray-400 mb-16 max-w-3xl text-lg font-poppins">
-              Whether it&apos;s a product launch, brand activation, corporate meetup, or public expo — we handle every piece of the puzzle. You show up, we make it look effortless.
+              Whether it&apos;s a product launch, brand activation, corporate
+              meetup, or public expo — we handle every piece of the puzzle. You
+              show up, we make it look effortless.
             </p>
           </FadeInSection>
 
@@ -92,13 +94,12 @@ export default function EventsManagementService() {
               <ServiceCard
                 icon={CheckCircle}
                 title="Post-Event Wrap-Up"
-                description="We handle cleanup, reports, and all the behind-the-scenes work after your event ends — so you don&apos;t have to."
+                description="We handle cleanup, reports, and all the behind-the-scenes work after your event ends — so you don't have to."
               />
             </FadeInSection>
           </div>
         </div>
       </section>
-
       {/* Our Projects Section */}
       {/* <section className="max-w-7xl mx-auto py-20 px-4">
         <FadeInSection>
@@ -112,32 +113,35 @@ export default function EventsManagementService() {
           <Projects service="Event Management" />
         </FadeInSection>
       </section> */}
-
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us Section */}{" "}
       <WhyChooseUsSection
         mainTitle="Why Brands Rely on"
-        titleName="Burraq Digits"
+        titleName="AA Marketing"
         titleFor="Event Management"
         benefits={[
           {
             icon: <CheckCircle size={20} />,
             title: "All-In-One Planning",
-            description: "You don't need 10 vendors — you just need one team that gets it all done.",
+            description:
+              "You don't need 10 vendors — you just need one team that gets it all done.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Proven Experience",
-            description: "From small pop-ups to massive exhibitions — we've handled events of every size.",
+            description:
+              "From small pop-ups to massive exhibitions — we've handled events of every size.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Creative + Logistical",
-            description: "We're not just organized — we're imaginative. Your event will look as good as it runs.",
+            description:
+              "We're not just organized — we're imaginative. Your event will look as good as it runs.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "End-to-End Support",
-            description: "Planning, setup, execution, media, reporting — all handled under one roof.",
+            description:
+              "Planning, setup, execution, media, reporting — all handled under one roof.",
           },
         ]}
         featuresRight={[
@@ -160,7 +164,6 @@ export default function EventsManagementService() {
           buttonLink: "/contact",
         }}
       />
-
       {/* FAQ Section */}
       <FaqSection
         title="Event Management"
@@ -170,7 +173,9 @@ export default function EventsManagementService() {
             question: "What types of events do you manage?",
             answer: (
               <>
-                We handle everything from brand activations, exhibitions, and trade shows to corporate events, influencer meetups, and product launches.
+                We handle everything from brand activations, exhibitions, and
+                trade shows to corporate events, influencer meetups, and product
+                launches.
               </>
             ),
           },
@@ -178,7 +183,9 @@ export default function EventsManagementService() {
             question: "Do you also handle the event promotion?",
             answer: (
               <>
-                Yes - we can help with pre-event hype on social media, content strategy, influencer outreach, and coverage during the event itself.
+                Yes - we can help with pre-event hype on social media, content
+                strategy, influencer outreach, and coverage during the event
+                itself.
               </>
             ),
           },
@@ -186,7 +193,8 @@ export default function EventsManagementService() {
             question: "Can you manage events outside Karachi?",
             answer: (
               <>
-                Definitely. While we&apos;re based in Karachi, we&apos;ve managed activations and exhibitions across Pakistan.
+                Definitely. While we&apos;re based in Karachi, we&apos;ve
+                managed activations and exhibitions across Pakistan.
               </>
             ),
           },
@@ -194,7 +202,9 @@ export default function EventsManagementService() {
             question: "What's included in your end-to-end service?",
             answer: (
               <>
-                Planning, vendor coordination, branding, staffing, tech setup, live coverage, crowd management, and wrap-up reporting — we handle it all.
+                Planning, vendor coordination, branding, staffing, tech setup,
+                live coverage, crowd management, and wrap-up reporting — we
+                handle it all.
               </>
             ),
           },
@@ -202,13 +212,14 @@ export default function EventsManagementService() {
             question: "How far in advance should I book an event with you?",
             answer: (
               <>
-                Ideally 4-6 weeks before the event. For large-scale events, even earlier is better to secure venues, vendors, and smooth execution.
+                Ideally 4-6 weeks before the event. For large-scale events, even
+                earlier is better to secure venues, vendors, and smooth
+                execution.
               </>
             ),
           },
         ]}
       />
-
       {/* CTA Section */}
       <CtaSection
         title="Let's Make Your Next Event One to Remember"

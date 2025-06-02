@@ -9,7 +9,7 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-14 h-7 rounded-full bg-background/10 backdrop-blur-sm flex items-center transition duration-300 focus:outline-none shadow relative"
+      className="w-14 h-7 rounded-full bg-background2 backdrop-blur-sm flex items-center transition duration-300 focus:outline-none shadow relative"
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
     >
       <div

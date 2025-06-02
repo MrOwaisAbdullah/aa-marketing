@@ -12,7 +12,7 @@ import ThemeLogo from "./ui/ThemeLogo";
 
 export default function Footer() {
   return (
-    <footer className="font-poppins mx-auto bg-gradient-to-tl from-[#dc5b5b]/30 via-[#6a59ee] to-indigo-900/80 text-white relative z-0 pt-20">
+    <footer className="font-poppins mx-auto bg-gradient-to-tl from-[#dc5b5b]/30 via-[#6a59ee] to-indigo-900/80 text-white relative z-0 pt-7">
       <div className="max-w-7xl mx-auto px-4 py-20">
         <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-3">
           {/* Column 1: Contact & Company Info */}

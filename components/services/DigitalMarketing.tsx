@@ -23,7 +23,7 @@ export default function DigitalMarketingService() {
       <ServiceHeroSection
         subheading="DIGITAL MARKETING"
         heading="Results-Driven Marketing by"
-        headingHighlight="Burraq Digits"
+        headingHighlight="AA Marketing"
         heading2="Smart Campaigns. Real Growth."
         paragraph="Attract the right audience, boost conversions, and grow your business with focused digital marketing strategies that are built on performance, not just promises."
         buttonText="GET STARTED WITH DIGITAL MARKETING"
@@ -35,10 +35,14 @@ export default function DigitalMarketingService() {
         <div className="px-4">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat text-text">
-              Get Seen. Get Clicks. Get Results with <span className="text-primary">Digital Marketing</span> Services
+              Get Seen. Get Clicks. Get Results with{" "}
+              <span className="text-primary">Digital Marketing</span> Services
             </h2>
             <p className="text-text/80 mb-16 max-w-3xl text-lg font-poppins">
-              We don&apos;t throw strategies at the wall to see what sticks. At AA Marketing, our campaigns are built on smart targeting, constant optimization, and crystal-clear reporting — so your growth is measurable and consistent.
+              We don&apos;t throw strategies at the wall to see what sticks. At
+              AA Marketing, our campaigns are built on smart targeting, constant
+              optimization, and crystal-clear reporting — so your growth is
+              measurable and consistent.
             </p>
           </FadeInSection>
 
@@ -123,22 +127,25 @@ export default function DigitalMarketingService() {
           {
             icon: <CheckCircle size={20} />,
             title: "Performance-focused approach",
-            description: "We focus on metrics that matter — like leads, sales, and ROAS.",
+            description:
+              "We focus on metrics that matter — like leads, sales, and ROAS.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "No copy-paste campaigns",
-            description: "Every brand gets a strategy built from scratch, tailored to their goals."
+            description:
+              "Every brand gets a strategy built from scratch, tailored to their goals.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Full-funnel tracking",
-            description: "We measure every step of the customer journey to optimize for real outcomes."
+            description:
+              "We measure every step of the customer journey to optimize for real outcomes.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Clear, regular reporting",
-            description: "No confusing jargon — just data you can use to grow."
+            description: "No confusing jargon — just data you can use to grow.",
           },
         ]}
         featuresRight={[
@@ -171,7 +178,10 @@ export default function DigitalMarketingService() {
             question: "What is digital marketing?",
             answer: (
               <>
-                Digital marketing is the use of online channels like search engines, social media, email, and ads to reach and convert customers. It&apos;s a strategic approach to getting your business in front of the right people at the right time.
+                Digital marketing is the use of online channels like search
+                engines, social media, email, and ads to reach and convert
+                customers. It&apos;s a strategic approach to getting your
+                business in front of the right people at the right time.
               </>
             ),
           },
@@ -179,7 +189,9 @@ export default function DigitalMarketingService() {
             question: "Do you offer paid advertising services?",
             answer: (
               <>
-                Yes. We create, manage, and optimize ads on Google, Meta (Facebook/Instagram), LinkedIn, and other platforms — all tailored to your goals and audience.
+                Yes. We create, manage, and optimize ads on Google, Meta
+                (Facebook/Instagram), LinkedIn, and other platforms — all
+                tailored to your goals and audience.
               </>
             ),
           },
@@ -187,7 +199,9 @@ export default function DigitalMarketingService() {
             question: "How do I know if my marketing is working?",
             answer: (
               <>
-                We provide clear reports and dashboards that track engagement, conversions, and return on ad spend (ROAS), so you know exactly what&apos;s delivering results.
+                We provide clear reports and dashboards that track engagement,
+                conversions, and return on ad spend (ROAS), so you know exactly
+                what&apos;s delivering results.
               </>
             ),
           },
@@ -195,7 +209,8 @@ export default function DigitalMarketingService() {
             question: "Can you work with my existing marketing team?",
             answer: (
               <>
-                Absolutely. We can collaborate with your in-house team or handle everything from scratch — whatever suits your workflow.
+                Absolutely. We can collaborate with your in-house team or handle
+                everything from scratch — whatever suits your workflow.
               </>
             ),
           },
@@ -203,7 +218,9 @@ export default function DigitalMarketingService() {
             question: "How much should I budget for digital marketing?",
             answer: (
               <>
-                It depends on your goals, audience size, and how competitive your market is. We&apos;ll help you set realistic budgets based on data and expected returns.
+                It depends on your goals, audience size, and how competitive
+                your market is. We&apos;ll help you set realistic budgets based
+                on data and expected returns.
               </>
             ),
           },
@@ -213,7 +230,7 @@ export default function DigitalMarketingService() {
       {/* CTA Section */}
       <CtaSection
         title="Grow Smarter With Digital Marketing That Performs"
-        paragraph="Let&apos;s build campaigns that get clicks, drive conversions, and deliver real growth. Book a free consultation with AA Marketing today."
+        paragraph="Let's build campaigns that get clicks, drive conversions, and deliver real growth. Book a free consultation with AA Marketing today."
         buttonText="GET STARTED WITH DIGITAL MARKETING"
         buttonLink="/contact"
       />

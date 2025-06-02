@@ -19,7 +19,10 @@ const services = [
   { name: "Influencer Marketing", href: "/services/influencer-marketing" },
   { name: "Logo Design", href: "/services/logo-design" },
   { name: "Events Management", href: "/services/events-management" },
-  { name: "Outdoor Marketing", href: "/services/outdoor-marketing-in-pakistan" },
+  {
+    name: "Outdoor Marketing",
+    href: "/services/outdoor-marketing-in-pakistan",
+  },
 ];
 
 const Header = () => {
@@ -101,7 +104,6 @@ const Header = () => {
 
   function getMenuClassNames() {
     let menuClasses = [];
-
     if (isMenuOpen) {
       menuClasses = [
         "flex",
@@ -116,9 +118,15 @@ const Header = () => {
         "flex-col",
         "left-0",
         "top-[50px]",
-        "bg-black/30",
+        "bg-gradient-to-b",
+        "from-white/80",
+        "to-background",
+        "dark:from-black/80",
+        "dark:to-background",
         "z-50",
-        "backdrop-blur-sm",
+        "backdrop-blur-xl",
+        "border-t",
+        "border-border",
       ];
     } else {
       menuClasses = [
@@ -136,13 +144,13 @@ const Header = () => {
   }
 
   return (
-    <header className="relative top-0 left-0 right-0 z-50 mx-auto py-5 -my-4 sm:my-0 sm:py-1 max-h-24 sm:max-h-none font-poppins bg-black/30 backdrop-blur-sm">
+    <header className="relative top-0 back left-0 right-0 z-50 mx-auto py-5 -my-4 sm:my-0 sm:py-1 max-h-20 sm:max-h-none font-poppins bg-gradient-to-r from-black/30 to-white/30 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex justify-between pt-2 px-3 sm:p-3 flex-col lg:flex-row z-50 relative">
         <div className="flex justify-between items-center">
           <ThemeLogo />
 
           <button
-            className="lg:hidden inline-flex items-center -mt-4 text-4xl text-gray-600 hover:text-primary z-10"
+            className="lg:hidden inline-flex items-center -mt-4 text-4xl text-primary hover:text-accent z-10"
             onClick={(e) => {
               e.stopPropagation();
               setIsMenuOpen(!isMenuOpen);
@@ -153,21 +161,21 @@ const Header = () => {
           </button>
         </div>
         <nav className={getMenuClassNames()}>
+          {" "}
           <Link
             href={"/"}
             onClick={handleLinkClick}
-            className="mr-5 text-white font-medium text-base hover:text-primary"
+            className="mr-5 font-medium text-base lg:text-white text-text hover:text-primary transition-colors"
           >
             Home
-          </Link>
+          </Link>{" "}
           <Link
             href={"/about"}
             onClick={handleLinkClick}
-            className="mr-5 text-white font-medium text-base hover:text-primary"
+            className="mr-5 font-medium text-base lg:text-white text-text hover:text-primary transition-colors"
           >
             About Us
           </Link>
-
           {/* Services with dropdown */}
           <div
             className="relative"
@@ -176,34 +184,34 @@ const Header = () => {
             onMouseLeave={handleMouseLeave}
           >
             {/* Desktop: Use div with hover, Mobile/Tablet: Use button with click */}
-            <div className="mr-5 text-white font-medium text-base hover:text-primary cursor-pointer flex items-center">
+            <div className="mr-5 font-medium text-base hover:text-primary cursor-pointer flex items-center">
+              {" "}
               <Link
                 href="/services"
-                className="hover:text-primary"
+                className="lg:text-white text-text hover:text-primary"
                 onClick={handleLinkClick}
               >
                 Our Services
               </Link>
               <button
                 onClick={toggleServicesDropdown}
-                className="ml-1 flex items-center focus:outline-none"
+                className="ml-1 flex items-center focus:outline-none lg:text-white text-text"
                 aria-label="Toggle services menu"
               >
                 <ChevronDown
-                  className={`h-4 w-4 transition-transform ${
+                  className={`h-6 w-6 lg:h-4 lg:w-4 transition-transform ${
                     servicesOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
-            </div>
-
+            </div>{" "}
             {/* Dropdown menu */}
             {servicesOpen && (
               <div
                 className={`${
                   isMenuOpen
                     ? "relative shadow-none bg-transparent mt-4 ml-4 w-full"
-                    : "absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-background ring-1 ring-black ring-opacity-5"
+                    : "absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-background backdrop-blur-lg border border-border"
                 } z-50`}
               >
                 <div className="py-2">
@@ -212,7 +220,7 @@ const Header = () => {
                       key={index}
                       href={service.href}
                       onClick={handleLinkClick}
-                      className="px-4 py-3 text-sm text-text hover:bg-primary flex items-center"
+                      className="px-4 py-3 text-sm text-text hover:bg-[#dc5b5b]/50 flex items-center transition-colors"
                     >
                       <ChevronRight className="mr-2 h-4 w-4 text-primary" />
                       {service.name}
@@ -221,16 +229,14 @@ const Header = () => {
                 </div>
               </div>
             )}
-          </div>
-
+          </div>{" "}
           <Link
             href={"/projects"}
             onClick={handleLinkClick}
-            className="mr-5 text-white font-medium text-base hover:text-primary"
+            className="mr-5 font-medium text-base lg:text-white text-text hover:text-primary transition-colors"
           >
             Our Projects
           </Link>
-
           <div className="flex flex-col lg:flex-row justify-center lg:items-center gap-4">
             <ThemeSwitcher />
             <button className="group inline-flex items-center text-center justify-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-[#a54a4a]/30 hover:bg-accent py-2 px-8 lg:py-2 lg:px-8 rounded-full font-medium lg:text-md transition-all duration-300 transform shadow-lg shadow-primary/20 text-base mt-4 lg:mt-0">

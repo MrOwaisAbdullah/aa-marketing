@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://aamarktng.com/services/ui-ux-design",
     images: [
       {
-        url: "/assets/services/ui-ux-design.jpg",
+        url: "https://aamarktng.com/assets/services/ui-ux-design.jpg",
         width: 1200,
         height: 630,
         alt: "UI/UX Design Services - AA Marketing",

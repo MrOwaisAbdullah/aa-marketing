@@ -23,7 +23,7 @@ export default function SocialMediaMarketingService() {
       <ServiceHeroSection
         subheading="SOCIAL MEDIA MARKETING"
         heading="Grow Your Brand with"
-        headingHighlight="Burraq Digits"
+        headingHighlight="AA Marketing"
         heading2="Social Media That Works"
         paragraph="Build trust, drive engagement, and increase conversions with our strategic social media marketing services that keep your brand consistent, active, and ahead of the curve."
         buttonText="GET STARTED WITH SOCIAL MEDIA"
@@ -35,10 +35,13 @@ export default function SocialMediaMarketingService() {
         <div className="px-4">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat text-text">
-              Grow Your Brand with <span className="text-primary">Social Media</span> That Engages
+              Grow Your Brand with{" "}
+              <span className="text-primary">Social Media</span> That Engages
             </h2>
             <p className="text-text/80 mb-16 max-w-3xl text-lg font-poppins">
-              We help brands build real connections on social media. From content strategy to community management, we create social experiences that drive engagement and growth.
+              We help brands build real connections on social media. From
+              content strategy to community management, we create social
+              experiences that drive engagement and growth.
             </p>
           </FadeInSection>
 
@@ -104,10 +107,12 @@ export default function SocialMediaMarketingService() {
       <section className="max-w-7xl mx-auto py-20 px-4">
         <FadeInSection>
           <h2 className="text-3xl text-center md:text-4xl font-bold mb-10 font-montserrat text-text">
-            Our <span className="text-primary">Social Media</span> Success Stories
+            Our <span className="text-primary">Social Media</span> Success
+            Stories
           </h2>
           <p className="text-text/80 text-center mb-16 text-lg font-poppins">
-            Take a look at some of our social media campaigns that have helped brands build engaged communities and drive real business results.
+            Take a look at some of our social media campaigns that have helped
+            brands build engaged communities and drive real business results.
           </p>
 
           <Projects service="Social Media Marketing" />
@@ -123,22 +128,26 @@ export default function SocialMediaMarketingService() {
           {
             icon: <CheckCircle size={20} />,
             title: "Clear strategy backed by data",
-            description: "Everything we post is backed by purpose, insights, and goals.",
+            description:
+              "Everything we post is backed by purpose, insights, and goals.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Creative that grabs attention",
-            description: "From visuals to captions, we focus on what stops the scroll.",
+            description:
+              "From visuals to captions, we focus on what stops the scroll.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Full-service execution",
-            description: "We handle planning, posting, community management, and tracking."
+            description:
+              "We handle planning, posting, community management, and tracking.",
           },
           {
             icon: <CheckCircle size={20} />,
             title: "Flexible, platform-aware approach",
-            description: "Our team knows what works across Instagram, Facebook, TikTok, and LinkedIn."
+            description:
+              "Our team knows what works across Instagram, Facebook, TikTok, and LinkedIn.",
           },
         ]}
         featuresRight={[
@@ -171,7 +180,11 @@ export default function SocialMediaMarketingService() {
             question: "What is social media marketing?",
             answer: (
               <>
-                Social media marketing involves using platforms like Instagram, Facebook, TikTok, and LinkedIn to build brand awareness, engage with your audience, and drive traffic or sales. It includes content creation, scheduling, performance tracking, and campaign management.
+                Social media marketing involves using platforms like Instagram,
+                Facebook, TikTok, and LinkedIn to build brand awareness, engage
+                with your audience, and drive traffic or sales. It includes
+                content creation, scheduling, performance tracking, and campaign
+                management.
               </>
             ),
           },
@@ -179,7 +192,9 @@ export default function SocialMediaMarketingService() {
             question: "Which platforms do you manage?",
             answer: (
               <>
-                We manage content and campaigns across Instagram, Facebook, LinkedIn, TikTok, Twitter (X), YouTube Shorts, and more — depending on where your audience is.
+                We manage content and campaigns across Instagram, Facebook,
+                LinkedIn, TikTok, Twitter (X), YouTube Shorts, and more —
+                depending on where your audience is.
               </>
             ),
           },
@@ -187,7 +202,9 @@ export default function SocialMediaMarketingService() {
             question: "Do you create all the content?",
             answer: (
               <>
-                Yes! Our team handles content strategy, design, captions, and reels. We also guide clients on trends and help film or source footage when needed.
+                Yes! Our team handles content strategy, design, captions, and
+                reels. We also guide clients on trends and help film or source
+                footage when needed.
               </>
             ),
           },
@@ -195,7 +212,9 @@ export default function SocialMediaMarketingService() {
             question: "Can you run paid ads too?",
             answer: (
               <>
-                Absolutely. We plan and manage paid campaigns on social platforms to boost reach, drive website visits, or promote offers — all backed by reporting.
+                Absolutely. We plan and manage paid campaigns on social
+                platforms to boost reach, drive website visits, or promote
+                offers — all backed by reporting.
               </>
             ),
           },
@@ -203,7 +222,9 @@ export default function SocialMediaMarketingService() {
             question: "How do you measure success?",
             answer: (
               <>
-                We use platform insights and reporting tools to measure engagement, reach, conversions, and follower growth — then tweak strategies based on what works best.
+                We use platform insights and reporting tools to measure
+                engagement, reach, conversions, and follower growth — then tweak
+                strategies based on what works best.
               </>
             ),
           },

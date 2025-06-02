@@ -6,8 +6,8 @@ interface BenefitItemProps {
 
 function BenefitItem({ icon, title, description }: BenefitItemProps) {
   return (
-    <div className="flex gap-4">
-      <div className="text-primary mt-1">{icon}</div>
+    <div className="group flex gap-4">
+      <div className="text-primary group-hover:text-accent mt-1">{icon}</div>
       <div>
         <h3 className="text-xl font-semibold mb-2 font-montserrat">{title}</h3>
         <p className="text-gray-400 font-poppins">{description}</p>

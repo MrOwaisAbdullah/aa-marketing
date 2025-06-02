@@ -6,23 +6,21 @@ export const metadata: Metadata = {
   title: "App Development Services",
   description:
     "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
-  openGraph: {
-    title: "App Development Services | Burraq Digits",
+  openGraph: {    title: "App Development Services | AA Marketing",
     description:
       "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
-    url: "https://burraqdigits.com/services/app-development",
+    url: "https://aamarktng.com/services/app-development",
     images: [
       {
         url: "/assets/services/app-development.jpg",
         width: 1200,
         height: 630,
-        alt: "App Development Services - Burraq Digits",
+        alt: "App Development Services - AA Marketing",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "App Development Services | Burraq Digits",
+    card: "summary_large_image",    title: "App Development Services | AA Marketing",
     description:
       "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
     images: ["/assets/services/app-development.jpg"],

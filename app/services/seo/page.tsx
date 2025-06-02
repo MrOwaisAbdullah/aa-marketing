@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://aamarktng.com/services/seo",
     images: [
       {
-        url: "/assets/services/seo.jpg",
+        url: "https://aamarktng.com/assets/services/seo.jpg",
         width: 1200,
         height: 630,
         alt: "SEO Services - AA Marketing",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "SEO Services | AA Marketing",
     description:
       "Boost your website's visibility and rankings with our professional SEO services.",
-    images: ["/assets/services/seo.jpg"],
+    images: ["https://aamarktng.com/assets/services/seo.jpg"],
   },
   alternates: {
     canonical: "/services/seo",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://aamarktng.com/services/events-management",
     images: [
       {
-        url: "/assets/services/events-management.jpg",
+        url: "https://aamarktng.com/assets/services/events-management.jpg",
         width: 1200,
         height: 630,
         alt: "Events Management Services - AA Marketing",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Events Management Services | AA Marketing",
     description:
       "Professional events planning and management services to create memorable experiences for your brand and audience.",
-    images: ["/assets/services/events-management.jpg"],
+    images: ["https://aamarktng.com/assets/services/events-management.jpg"],
   },
   alternates: {
     canonical: "/services/events-management",

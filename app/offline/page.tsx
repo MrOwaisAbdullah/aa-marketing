@@ -8,7 +8,7 @@ export default function OfflinePage() {
         <div className="relative w-48 h-48 mx-auto mb-8">
           <Image
             src="/assets/logo.webp"
-            alt="Burraq Digits Logo"
+            alt="AA Marketing Logo"
             fill
             className="object-contain"
           />

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://aamarktng.com/services/logo-design",
     images: [
       {
-        url: "/assets/services/logo-design.jpg",
+        url: "https://aamarktng.com/assets/services/logo-design.jpg",
         width: 1200,
         height: 630,
         alt: "Logo Design Services - AA Marketing",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Logo Design Services | AA Marketing",
     description:
       "Professional logo design services to create unique and memorable brand identities.",
-    images: ["/assets/services/logo-design.jpg"],
+    images: ["https://aamarktng.com/assets/services/logo-design.jpg"],
   },
   alternates: {
     canonical: "/services/logo-design",
