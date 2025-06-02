@@ -69,11 +69,10 @@ const nextConfig = {
     if (!dev && !isServer) {
       config.cache = {
         type: "filesystem",
-        buildDependencies: {
-          config: [__filename],
-        },
+        version: "1.0.0",
+        cacheDirectory: ".next/cache/webpack",
+        store: "pack",
         compression: "gzip",
-        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
       };
     }
 
