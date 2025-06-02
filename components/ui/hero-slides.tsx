@@ -98,7 +98,7 @@ export default function Hero() {
 
   return (
     <div className="absolute right-0 w-full lg:w-4/5 h-full min-h-screen overflow-hidden">
-      <div className="flex justify-end items-start h-full pt-10 pr-4 lg:pr-10 gap-8 lg:gap-10">
+      <div className="flex justify-end items-start h-full pt-10 pr-4 lg:pr-10 gap-2 lg:gap-8">
         {/* Column 1 - Moving Up */}
         <div className="flex-shrink-0 w-56 sm:w-72 transform rotate-12">
           <Column cards={column1Cards} direction="up" delay={0} />
