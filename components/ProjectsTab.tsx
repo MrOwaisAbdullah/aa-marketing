@@ -33,7 +33,7 @@ const ProjectTabs = ({
         }
       });
     });
-  }, []);
+  }, [categories]); // Add categories as dependency
 
   const loadMore = async () => {
     setIsLoading(true);
@@ -46,7 +46,7 @@ const ProjectTabs = ({
   // Reset visible items when changing tabs
   useEffect(() => {
     setVisibleItems(initialVisibleCount);
-  }, [selectedTab]);
+  }, [selectedTab, initialVisibleCount]); // Add initialVisibleCount as dependency
 
   return (
     <FadeInSection>
