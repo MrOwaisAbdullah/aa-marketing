@@ -79,7 +79,7 @@ export default function ServiceHeroSection({
 
         {/* Animated decorative line 2 - more visible */}
         <motion.div
-          className="absolute bottom-[30%] right-[20%] w-40 h-[3px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"
+          className="hidden lg:flex absolute bottom-[30%] right-[20%] w-40 h-[3px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"
           initial={{ rotate: -30, scale: 1, opacity: 0.5 }}
           animate={{
             rotate: [-30, -45, -30],
@@ -97,7 +97,7 @@ export default function ServiceHeroSection({
 
         {/* Animated circle 1 - larger and more visible */}
         <motion.div
-          className="absolute top-[60%] left-[25%] w-20 h-20 border-2 border-purple-500/30 rounded-full"
+          className="absolute top-[60%] left-[25%] w-20 h-20 border-2 border-purple-500 rounded-xl"
           initial={{ scale: 1, rotate: 0, opacity: 0.3 }}
           animate={{
             scale: [1, 1.3, 1],
@@ -114,7 +114,7 @@ export default function ServiceHeroSection({
 
         {/* Animated circle 2 - larger and more visible */}
         <motion.div
-          className="absolute top-[25%] right-[15%] w-28 h-28 border-2 border-primary/25 rounded-full"
+          className="absolute top-[30%] right-[15%] w-28 h-28 border-2 border-primary opacity-40 rounded-lg"
           initial={{ scale: 1, rotate: 0, opacity: 0.25 }}
           animate={{
             scale: [1, 0.8, 1],
