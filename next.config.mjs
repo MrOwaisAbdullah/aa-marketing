@@ -47,24 +47,20 @@ const nextConfig = {
       splitChunks: {
         chunks: "all",
         maxInitialRequests: 25,
-        minSize: 20000,
+        minSize: 10000,
         cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: "vendor",
-            chunks: "all",
-            priority: 10,
-            enforce: true,
-            reuseExistingChunk: true,
-          },
           commons: {
+            test: /[\\/]node_modules[\\/]/,
+            name: "vendors",
+            chunks: "all",
+          },
+          components: {
             test: /[\\/]components[\\/]/,
-            name: "commons",
+            name: "components",
+            enforce: true,
             chunks: "all",
             minSize: 0,
             minChunks: 2,
-            priority: 8,
-            reuseExistingChunk: true,
           },
         },
       },
@@ -89,6 +85,11 @@ const nextConfig = {
       {
         source: "/:path*",
         headers: [
+          {
+            key: "Link",
+            value:
+              "</vendors-21fef2aaffdc5e3c.js>; rel=preload; as=script, </components-*.js>; rel=preload; as=script",
+          },
           {
             key: "X-DNS-Prefetch-Control",
             value: "on",

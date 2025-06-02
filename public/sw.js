@@ -1,4 +1,4 @@
-const CACHE_NAME = "aa-marketing-v1";
+const CACHE_NAME = "aa-marketing-v2";
 const OFFLINE_URL = "/offline";
 const ASSETS_TO_CACHE = [
   "/",
@@ -6,6 +6,9 @@ const ASSETS_TO_CACHE = [
   "/assets/logo.webp",
   "/assets/logo-192.png",
   "/assets/logo-512.png",
+  "/vendors-21fef2aaffdc5e3c.js",
+  "/components-*.js",
+  "/_next/static/css/*.css",
 ];
 
 // Install event - cache core assets
