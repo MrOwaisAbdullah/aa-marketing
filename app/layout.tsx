@@ -1,12 +1,10 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FloatingNavbar from "@/components/FloatingNavbar";
+import dynamic from "next/dynamic";
 import Script from "next/script";
 import { Montserrat, Poppins } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import { ServiceWorkerProvider } from "@/components/ServiceWorkerProvider";
-import WhatsAppButton from "@/components/ui/WhatsappButton";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { generateThemeCSS } from "@/lib/theme";
 import type { Metadata } from "next";
@@ -25,7 +23,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "AA Marketing - Digital Marketing Agency",
-  description: "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
+  description:
+    "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
 };
 
 const jsonLd = {
@@ -51,6 +50,13 @@ const jsonLd = {
     "https://linkedin.com/company/aamarktng",
   ],
 };
+
+// Dynamically import components that are not immediately needed
+const Analytics = dynamic(() =>
+  import("@vercel/analytics/react").then((mod) => mod.Analytics)
+);
+const WhatsAppButton = dynamic(() => import("@/components/ui/WhatsappButton"));
+const FloatingNavbar = dynamic(() => import("@/components/FloatingNavbar"));
 
 export default function RootLayout({
   children,
@@ -95,7 +101,6 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics />
-          {/* WhatsApp Button */}
           <WhatsAppButton
             phoneNumber="+923352867361"
             message="Hello, I'm interested in your services!"

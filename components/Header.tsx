@@ -1,9 +1,9 @@
 "use client";
 
 import type React from "react";
-
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import { ChevronDown, ChevronRight } from "lucide-react";
@@ -25,12 +25,32 @@ const services = [
   },
 ];
 
+// Key routes to prefetch
+const keyRoutes = [
+  "/",
+  "/about",
+  "/services",
+  "/projects",
+  "/contact",
+  "/services/web-development",
+  "/services/digital-marketing",
+  "/services/app-development",
+];
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isMobileOrTablet = useRef(false);
+  const router = useRouter();
+
+  // Prefetch key routes on component mount
+  useEffect(() => {
+    keyRoutes.forEach((route) => {
+      router.prefetch(route);
+    });
+  }, [router]);
 
   // Check if we're on mobile/tablet (client-side only)
   useEffect(() => {

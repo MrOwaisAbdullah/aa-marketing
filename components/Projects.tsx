@@ -21,7 +21,7 @@ const Projects = ({ service }: { service: ServiceType }) => {
         {projects[service].map((project: Project, index: number) => (
           <div
             key={index}
-            className="group entrance scroll-smooth border border-primary/20 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 bg-background"
+            className="group entrance scroll-smooth border border-border rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary bg-background"
           >
             <div className="relative aspect-[1220/686] w-full overflow-hidden">
               <Image

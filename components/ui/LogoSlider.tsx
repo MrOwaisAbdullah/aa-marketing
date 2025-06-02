@@ -16,8 +16,6 @@ const logos = [
   "/assets/clients/logo (10).webp",
   "/assets/clients/logo (11).webp",
   "/assets/clients/logo (12).webp",
-
-
 ];
 
 export default function LogoSlider() {
@@ -35,7 +33,12 @@ export default function LogoSlider() {
                 height={150}
                 className="mx-0 h-12 w-auto object-contain grayscale transition-all 
                   hover:grayscale-0 dark:opacity-80 dark:hover:opacity-100"
-                onError={() => console.error(`Failed to load image: ${logo}`)}
+                loading="lazy"
+                sizes="(max-width: 640px) 150px, 300px"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/assets/logo-192.png';
+                }}
               />
             ))}
           </div>

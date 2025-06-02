@@ -1,25 +1,45 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import ProjectsTab from "@/components/ProjectsTab";
-import Services from "@/components/Services";
-import ServiceScroll from "@/components/ServiceScroll";
+import { lazy, Suspense } from "react";
 import SlidingHero from "@/components/Sliding-hero";
-import LogoSlider from "@/components/ui/LogoSlider";
-import Testimonials from "../components/Testimonials";
 
-export const dynamic = "force-static";
+// Dynamically import components not needed for initial render
+const About = lazy(() => import("@/components/About"));
+const Contact = lazy(() => import("@/components/Contact"));
+const ProjectsTab = lazy(() => import("@/components/ProjectsTab"));
+const Services = lazy(() => import("@/components/Services"));
+const ServiceScroll = lazy(() => import("@/components/ServiceScroll"));
+const LogoSlider = lazy(() => import("@/components/ui/LogoSlider"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+
+// Configure page to be statically generated
+export const generateStaticParams = async () => {
+  return [];
+};
 
 export default function Home() {
   return (
     <>
       <SlidingHero />
-      <LogoSlider />
-      <About />
-      <Services />
-      <ServiceScroll />
-      <ProjectsTab />
-      <Testimonials />
-      <Contact />
+      <Suspense fallback={<div className="h-12 bg-background" />}>
+        <LogoSlider />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <Services />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <ServiceScroll />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <ProjectsTab />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <Testimonials />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-background" />}>
+        <Contact />
+      </Suspense>
     </>
   );
 }

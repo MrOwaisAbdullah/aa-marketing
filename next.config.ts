@@ -29,40 +29,21 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: securityHeaders,
-      },
-      {
-        source: "/sw.js",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "application/javascript; charset=utf-8",
-          },
-          {
-            key: "Cache-Control",
-            value: "public, max-age=0, must-revalidate",
-          },
-          {
-            key: "Content-Security-Policy",
-            value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; manifest-src 'self'; worker-src 'self'",
-          },
-        ],
-      },
-      {
-        source: "/manifest.json",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "application/manifest+json; charset=utf-8",
-          },
-        ],
-      },
-    ];
+  poweredByHeader: false,
+  compress: true,
+  reactStrictMode: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  experimental: {
+    optimizeCss: true,
   },
   webpack: (config, { dev, isServer }) => {
     // Optimize webpack configuration
@@ -78,6 +59,22 @@ const nextConfig: NextConfig = {
             test: /[\\/]node_modules[\\/]/,
             name: "vendor",
             chunks: "all",
+            priority: 10,
+            enforce: true,
+          },
+          components: {
+            test: /[\\/]components[\\/]/,
+            name: "components",
+            chunks: "all",
+            priority: 8,
+          },
+          common: {
+            name: "common",
+            minChunks: 2,
+            chunks: "async",
+            priority: 5,
+            reuseExistingChunk: true,
+            enforce: true,
           },
         },
       },
@@ -95,15 +92,28 @@ const nextConfig: NextConfig = {
       };
     }
 
-    // Add buffer size limit to prevent allocation errors
-    config.performance = {
-      ...config.performance,
-      maxEntrypointSize: 512000,
-      maxAssetSize: 512000,
-      hints: false,
+    // Configure SVG handling
+    config.module = {
+      ...config.module,
+      rules: [
+        ...config.module.rules,
+        {
+          test: /\.svg$/,
+          use: ["@svgr/webpack"],
+        },
+      ],
     };
 
     return config;
+  },
+  // Include security headers
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: securityHeaders,
+      },
+    ];
   },
 };
 
