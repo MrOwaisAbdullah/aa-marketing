@@ -38,14 +38,14 @@ export default function Footer() {
 
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-[#dc5b5b]" />
-                <Link href={"tel:+923202019118"}>
-                  <span className="text-white">+923202019118</span>
+                <Link href={"tel:+923352867361"}>
+                  <span className="text-white">+92 335 286 7361</span>
                 </Link>
               </div>
 
               <div className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-[#dc5b5b]" />
-                <span className="text-white">info@aamarktng.com</span>
+                <span className="text-white">contact@aamarktng.com</span>
               </div>
             </div>
 
