@@ -6,7 +6,7 @@ const Typewriter = dynamic(
   () => import("nextjs-simple-typewriter").then((mod) => mod.Typewriter),
   {
     ssr: false,
-    loading: () => <span className="animate-pulse">Loading...</span>,
+    loading: () => <span className="animate-pulse">Loads Growth...</span>,
   }
 );
 
