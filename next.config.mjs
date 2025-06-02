@@ -1,34 +1,5 @@
-import type { NextConfig } from "next";
-import path from "path";
-
-const securityHeaders = [
-  {
-    key: "X-DNS-Prefetch-Control",
-    value: "on",
-  },
-  {
-    key: "X-XSS-Protection",
-    value: "1; mode=block",
-  },
-  {
-    key: "X-Frame-Options",
-    value: "SAMEORIGIN",
-  },
-  {
-    key: "X-Content-Type-Options",
-    value: "nosniff",
-  },
-  {
-    key: "Referrer-Policy",
-    value: "strict-origin-when-cross-origin",
-  },
-  {
-    key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
-  },
-];
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
@@ -56,9 +27,14 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: ["lucide-react"],
+  },
+  modularizeImports: {
+    "lucide-react": {
+      transform: "lucide-react/dist/esm/icons/{{member}}",
+    },
   },
   webpack: (config, { dev, isServer }) => {
-    // Optimize webpack configuration
     config.optimization = {
       ...config.optimization,
       minimize: true,
@@ -73,57 +49,75 @@ const nextConfig: NextConfig = {
             chunks: "all",
             priority: 10,
             enforce: true,
-          },
-          components: {
-            test: /[\\/]components[\\/]/,
-            name: "components",
-            chunks: "all",
-            priority: 8,
-          },
-          common: {
-            name: "common",
-            minChunks: 2,
-            chunks: "async",
-            priority: 5,
             reuseExistingChunk: true,
-            enforce: true,
+          },
+          commons: {
+            test: /[\\/]components[\\/]/,
+            name: "commons",
+            chunks: "all",
+            minSize: 0,
+            minChunks: 2,
+            priority: 8,
+            reuseExistingChunk: true,
           },
         },
       },
+      moduleIds: "deterministic",
+      runtimeChunk: "single",
     };
 
-    // Add memory optimization for production builds
     if (!dev && !isServer) {
       config.cache = {
         type: "filesystem",
         buildDependencies: {
           config: [__filename],
         },
-        cacheDirectory: path.resolve(process.cwd(), ".next/cache/webpack"),
-        maxAge: 604800000, // 1 week
+        compression: "gzip",
+        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
       };
     }
 
-    // Configure SVG handling
-    config.module = {
-      ...config.module,
-      rules: [
-        ...config.module.rules,
-        {
-          test: /\.svg$/,
-          use: ["@svgr/webpack"],
-        },
-      ],
-    };
-
     return config;
   },
-  // Include security headers
-  async headers() {
+  headers: async () => {
     return [
       {
         source: "/:path*",
-        headers: securityHeaders,
+        headers: [
+          {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=31536000; includeSubDomains",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value:
+              "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
       },
     ];
   },

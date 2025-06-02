@@ -2,6 +2,7 @@
 
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
+import { memo } from "react";
 
 const logos = [
   "/assets/clients/logo (1).webp",
@@ -18,28 +19,35 @@ const logos = [
   "/assets/clients/logo (12).webp",
 ];
 
+const LogoImage = memo(
+  ({ src, index }: { src: string | StaticImport; index: number }) => (
+    <Image
+      key={index}
+      src={src}
+      alt={`Client logo ${(index % logos.length) + 1}`}
+      width={300}
+      height={150}
+      className="mx-0 h-12 w-auto object-contain grayscale transition-all 
+      hover:grayscale-0 dark:opacity-80 dark:hover:opacity-100"
+      loading="lazy"
+      sizes="(max-width: 640px) 150px, 300px"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.src = "/assets/logo-192.png";
+      }}
+    />
+  )
+);
+LogoImage.displayName = "LogoImage";
+
 export default function LogoSlider() {
   return (
     <section className="relative -mt-[90px] py-4 bg-[#1d212b] will-change-transform">
       <div className="max-w-[1500px] mx-auto">
         <div className="overflow-hidden">
           <div className="w-max flex flex-nowrap slider">
-            {[...logos, ...logos, ...logos, ...logos].map((logo: string | StaticImport, index: number) => (
-              <Image
-                key={index}
-                src={logo}
-                alt={`Client logo ${(index % logos.length) + 1}`}
-                width={300}
-                height={150}
-                className="mx-0 h-12 w-auto object-contain grayscale transition-all 
-                  hover:grayscale-0 dark:opacity-80 dark:hover:opacity-100"
-                loading="lazy"
-                sizes="(max-width: 640px) 150px, 300px"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = '/assets/logo-192.png';
-                }}
-              />
+            {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
+              <LogoImage key={index} src={logo} index={index} />
             ))}
           </div>
         </div>
