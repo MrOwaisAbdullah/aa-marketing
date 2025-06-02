@@ -25,7 +25,7 @@ const About = () => {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:justify-start md:mt-4 mt-6">
               <Link href="/contact">
-                <button className="font-poppins flex items-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-black/40 hover:via-accent hover:to-black/30 py-2 px-8 rounded-full font-medium md:text-lg transition-all duration-300 transform shadow-lg shadow-primary/20">
+                <button className="font-poppins flex items-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-[#a54a4a] hover:via-accent hover:from-purple-700 hover:to-purple-500 py-2 px-8 rounded-full font-medium md:text-lg transition-all duration-500 transform shadow-lg shadow-primary/20">
                   Talk to Us
                 </button>
               </Link>

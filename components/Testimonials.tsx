@@ -156,13 +156,13 @@ const Testimonials = () => {
                 onClick={prevTestimonial}
                 className="w-12 h-12 bg-slate-800/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-slate-600/50 hover:bg-slate-700/80 transition-colors"
               >
-                <ChevronUp className="w-6 h-6 text-primary hover:accent" />
+                <ChevronUp className="w-6 h-6 text-white hover:accent" />
               </button>
               <button
                 onClick={nextTestimonial}
                 className="w-12 h-12 bg-slate-800/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-slate-600/50 hover:bg-slate-700/80 transition-colors"
               >
-                <ChevronDown className="w-6 h-6 text-primary hover:accent" />
+                <ChevronDown className="w-6 h-6 text-white hover:accent" />
               </button>
             </div>
 
@@ -272,13 +272,13 @@ const Testimonials = () => {
                   onClick={prevTestimonial}
                   className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-slate-800/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-slate-600/50 hover:bg-slate-700/80 transition-colors"
                 >
-                  <ChevronUp className="w-5 h-5 sm:w-6 sm:h-6 text-primary hover:text-accent" />
+                  <ChevronUp className="w-5 h-5 sm:w-6 sm:h-6 text-white hover:text-accent" />
                 </button>
                 <button
                   onClick={nextTestimonial}
                   className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 bg-slate-800/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-slate-600/50 hover:bg-slate-700/80 transition-colors"
                 >
-                  <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-primary hover:text-accent" />
+                  <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-white hover:text-accent" />
                 </button>
               </div>
             </div>

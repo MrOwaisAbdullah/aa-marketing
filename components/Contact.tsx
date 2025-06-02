@@ -68,7 +68,7 @@ const Contact = () => {
 
   return (
     <FadeInSection>
-      <section className=" text-gray-400 bg-gradient-to-br from-transparent via-background to-accent relative px-4 py-24">
+      <section className=" text-gray-400 bg-gradient-to-br from-transparent via-background to-[#6a59ee] relative px-4 py-32">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
           <div className="md:w-1/2 w-full opacity-90 rounded-lg overflow-hidden px-5 py-10 bg-secondary shadow-lg shadow-primary/20 border border-border">
             <Image
@@ -107,10 +107,10 @@ const Contact = () => {
           </div>
 
           <div className="md:w-1/2 mx-auto w-full flex flex-col md:ml-auto mt-8 md:mt-0 font-montserrat">
-            <h2 className="font-bold text-accent text-2xl sm:text-3xl">
+            <h2 className="font-bold text-[#6a59ee] text-2xl sm:text-3xl">
               LET&apos;S TALK
             </h2>
-            <p className="mt-1 mb-6 text-sm">
+            <p className="mt-1 mb-6 text-text text-sm opacity-80">
               We are here to help you. Let us know how we can assist you.
             </p>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -189,7 +189,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center text-center justify-center text-white bg-gradient-to-br from-black/20 via-primary to-[#a54a4a] hover:via-accent hover:to-black/30 py-4 px-8 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold"
+                className="w-full flex items-center text-center justify-center text-white bg-gradient-to-br from-[#a54a4a] via-primary to-[#a54a4a] hover:from-purple-700 hover:via-accent hover:to-black/30 py-4 px-8 rounded transition-all duration-300 transform shadow-lg shadow-primary/20 text-md font-semibold"
               >
                 {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
               </button>
@@ -204,7 +204,7 @@ const Contact = () => {
                 </p>
               )}
             </form>
-            <p className="font-poppins text-xs text-center text-gray-500 mt-5">
+            <p className="font-poppins text-xs text-center text-text opacity-70 mt-5">
               Send us a message, and we&apos;ll contact you shortly.
             </p>
           </div>
