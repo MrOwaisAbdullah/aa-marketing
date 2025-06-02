@@ -30,12 +30,6 @@ export const metadata: Metadata = {
   title: "AA Marketing - Digital Marketing Agency",
   description:
     "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-
 };
 
 const jsonLd = {

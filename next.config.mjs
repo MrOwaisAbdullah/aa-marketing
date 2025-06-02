@@ -43,24 +43,28 @@ const nextConfig = {
   webpack: (config, { dev, isServer }) => {
     config.optimization = {
       ...config.optimization,
-      minimize: true,
-      splitChunks: {
+      minimize: true,      splitChunks: {
         chunks: "all",
         maxInitialRequests: 25,
         minSize: 10000,
         cacheGroups: {
-          commons: {
+          vendors: {
             test: /[\\/]node_modules[\\/]/,
             name: "vendors",
             chunks: "all",
+            priority: 10,
+            enforce: true,
+            reuseExistingChunk: true,
           },
           components: {
             test: /[\\/]components[\\/]/,
             name: "components",
-            enforce: true,
             chunks: "all",
+            priority: 8,
             minSize: 0,
             minChunks: 2,
+            enforce: true,
+            reuseExistingChunk: true,
           },
         },
       },
@@ -84,11 +88,9 @@ const nextConfig = {
     return [
       {
         source: "/:path*",
-        headers: [
-          {
+        headers: [          {
             key: "Link",
-            value:
-              "</vendors-21fef2aaffdc5e3c.js>; rel=preload; as=script, </components-*.js>; rel=preload; as=script",
+            value: "/_next/static/chunks/vendors.js; rel=preload; as=script, /_next/static/chunks/components.js; rel=preload; as=script",
           },
           {
             key: "X-DNS-Prefetch-Control",
