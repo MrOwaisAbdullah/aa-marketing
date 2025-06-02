@@ -62,7 +62,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-8 md:py-12 lg:py-20 bg-gradient-to-tr from-[#dc5b5b] via-[#6a59ee] to-indigo-900relative overflow-hidden">
+    <section className="py-12 lg:py-20 bg-gradient-to-tr from-[#dc5b5b] via-[#6a59ee] to-indigo-900relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-30">
         <div

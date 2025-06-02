@@ -206,7 +206,7 @@ const ServiceScroll = () => {
   return (
     <div
       ref={containerRef}
-      className="relative py-28 px-2 lg:px-10 lg:min-h-[600vh] bg-gradient-to-tl from-[#dc5b5b] via-[#6a59ee] to-indigo-900"
+      className="relative py-16 lg:py-28 px-2 lg:px-10 lg:min-h-[600vh] bg-gradient-to-tl from-[#dc5b5b] via-[#6a59ee] to-indigo-900"
     >
       {/* Fixed background pattern */}
       <div className="absolute inset-0 opacity-50">
