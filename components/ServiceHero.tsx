@@ -23,7 +23,7 @@ export default function ServiceHeroSection({
   buttonLink,
 }: AnimatedCtaProps) {
   return (
-    <section className="relative bg-gradient-to-t from-[#6a59ee] to-transparent backdrop-blur-sm overflow-hidden md:pt-24 pt-8 pb-20 rounded-b-[50px] border-b border-b-border">
+    <section className="relative bg-gradient-to-t from-[#6a59ee] to-transparent backdrop-blur-sm overflow-hidden md:pt-24 pt-16 pb-20 rounded-b-[50px] border-b border-b-border">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <motion.div
