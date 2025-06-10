@@ -6,20 +6,14 @@
 
 "use client";
 
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
 import config from "../../../sanity.config";
 import "./page.metadata";
+import { NextStudio } from 'next-sanity/studio'
 
-const NextStudioComponent = dynamic(
-  () => import("next-sanity/studio").then((mod) => mod.NextStudio),
-  { ssr: false }
-);
+export const dynamic = 'force-static'
 
 export default function StudioPage() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <NextStudioComponent config={config} />
-    </Suspense>
+      <NextStudio config={config} />
   );
 }

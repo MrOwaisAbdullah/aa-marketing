@@ -10,6 +10,4 @@ export const viewport = {
   maximumScale: 1,
 };
 
-export const runtime = "edge";
-export const preferredRegion = "auto";
-export const revalidate = 60;
+export const revalidate = 30;
