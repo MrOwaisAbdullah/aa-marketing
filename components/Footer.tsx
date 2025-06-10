@@ -192,14 +192,14 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
                   href="/blog"
-                  className="inline-block text-[#e5e7eb] transition-colors hover:text-[#3a69ff]"
+                  className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
                   Blog
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link
                   href="/services"

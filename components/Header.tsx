@@ -29,6 +29,8 @@ const services = [
 const keyRoutes = [
   "/",
   "/about",
+  "blog",
+  "/blog/[slug]",
   "/services",
   "/projects",
   "/contact",
@@ -189,6 +191,13 @@ const Header = () => {
           >
             Home
           </Link>{" "}
+                    <Link
+            href={"/blog"}
+            onClick={handleLinkClick}
+            className="mr-5 font-medium text-base lg:text-white text-text hover:text-primary transition-colors"
+          >
+            Blog
+          </Link>
           <Link
             href={"/about"}
             onClick={handleLinkClick}

@@ -60,8 +60,9 @@ const jsonLd = {
 const Analytics = dynamic(() =>
   import("@vercel/analytics/react").then((mod) => mod.Analytics)
 );
-const WhatsAppButton = dynamic(() => import("@/components/ui/WhatsappButton"));
-const FloatingNavbar = dynamic(() => import("@/components/FloatingNavbar"));
+const NavigationComponents = dynamic(
+  () => import("@/components/NavigationComponents")
+);
 
 export default function RootLayout({
   children,
@@ -75,10 +76,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <meta
-          name="google-site-verification"
-          content="e-FTBsUIGp8fWOhMM2-EAXuIP5uyaE-_FojdOIEdFzQ"
-        />
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -101,22 +98,11 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <ServiceWorkerProvider />
-          <FloatingNavbar />
+          <NavigationComponents />
           <Header />
           {children}
           <Footer />
           <Analytics />
-          <WhatsAppButton
-            phoneNumber="+923352867361"
-            message="Hello, I'm interested in your services!"
-            tooltipMessages={[
-              "Hi, Need Our Help?",
-              "Contact us now!",
-              "Need a quote?",
-              "Get help instantly",
-            ]}
-            initialDelay={5000}
-          />
         </ThemeProvider>
       </body>
     </html>

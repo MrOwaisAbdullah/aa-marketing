@@ -1,0 +1,76 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
+
+interface RelatedPost {
+  _id: string;
+  title: string;
+  slug: { current: string };
+  mainImage: {
+    _type: string;
+    asset: { _ref: string; _type: string };
+    alt?: string;
+  };
+  summary: string;
+}
+
+interface RelatedPostsProps {
+  currentSlug: string;
+  limit?: number;
+}
+
+export async function fetchRelatedPosts(
+  currentSlug: string,
+  limit = 3
+): Promise<RelatedPost[]> {
+  const query = `*[_type == "post" && slug.current != $slug] | order(_createdAt desc)[0...$limit]{
+    _id,
+    title,
+    slug,
+    mainImage,
+    summary
+  }`;
+  return await client.fetch(query, { slug: currentSlug, limit });
+}
+
+const RelatedPosts = async ({ currentSlug, limit = 3 }: RelatedPostsProps) => {
+  const posts = await fetchRelatedPosts(currentSlug, limit);
+  if (!posts.length) return null;
+  return (
+    <div>
+      <h2 className="text-md lg:text-2xl text-center font-semibold mb-4">
+        Related Posts
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+        {posts.map((post) => (
+          <Link
+            key={post._id}
+            href={`/blog/${post.slug.current}`}
+            className="block border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-background"
+          >
+            <div className="relative aspect-[16/9] w-full h-40 overflow-hidden">
+              <Image
+                src={urlFor(post.mainImage).url()}
+                alt={post.mainImage.alt || post.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-base mb-2 text-heading line-clamp-2">
+                {post.title}
+              </h3>
+              <p className="text-sm text-text/80 line-clamp-3">
+                {post.summary}
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default RelatedPosts;

@@ -60,7 +60,7 @@ export const PulsingLoader: React.FC<PulsingLoaderProps> = ({ size = "md", color
         }}
       />
             <div
-        className={cn("absolute rounded-full", colorClasses[color], "opacity-10")}
+        className={cn("absolute rounded-full", "bg-accent", "opacity-10")}
         style={{
           width: `${sizeValue * 1.5}rem`,
           height: `${sizeValue * 1.5}rem`,

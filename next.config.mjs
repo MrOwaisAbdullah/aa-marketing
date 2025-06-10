@@ -1,17 +1,9 @@
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  poweredByHeader: false,
-  compress: true,
-  reactStrictMode: true,
+  // poweredByHeader: false,
+  // compress: true,
+  // reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     remotePatterns: [
       {
         protocol: "https",
@@ -23,115 +15,91 @@ const nextConfig = {
         hostname: "aamarktng.com",
         pathname: "**",
       },
-    ],
-    minimumCacheTTL: 60,
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ["lucide-react"],
-  },
-  modularizeImports: {
-    "lucide-react": {
-      transform: "lucide-react/dist/esm/icons/{{member}}",
-    },
-  },
-  webpack: (config, { dev, isServer }) => {
-    config.optimization = {
-      ...config.optimization,
-      minimize: true,
-      splitChunks: {
-        chunks: "all",
-        maxInitialRequests: 25,
-        minSize: 10000,
-        cacheGroups: {
-          vendors: {
-            test: /[\\/]node_modules[\\/]/,
-            name: "vendors",
-            chunks: "all",
-            priority: 10,
-            enforce: true,
-            reuseExistingChunk: true,
-          },
-          components: {
-            test: /[\\/]components[\\/]/,
-            name: "components",
-            chunks: "all",
-            priority: 8,
-            minSize: 0,
-            minChunks: 2,
-            enforce: true,
-            reuseExistingChunk: true,
-          },
-        },
-      },
-      moduleIds: "deterministic",
-      runtimeChunk: "single",
-    };
-
-    if (!dev && !isServer) {
-      config.cache = {
-        type: "filesystem",
-        version: "1.0.0",
-        cacheDirectory: resolve(__dirname, ".next/cache/webpack"),
-        store: "pack",
-        compression: "gzip",
-      };
-    }
-
-    return config;
-  },
-  headers: async () => {
-    return [
       {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Link",
-            value:
-              "/_next/static/chunks/vendors.js; rel=preload; as=script, /_next/static/chunks/components.js; rel=preload; as=script",
-          },
-          {
-            key: "X-DNS-Prefetch-Control",
-            value: "on",
-          },
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=31536000; includeSubDomains",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value:
-              "camera=(), microphone=(), geolocation=(), interest-cohort=()",
-          },
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "**",
       },
-    ];
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "**",
+      }
+    ],
+    // dangerouslyAllowSVG: true,
+    // contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-};
+  // experimental: {
+  //   optimizeCss: true,
+  //   optimizePackageImports: ["lucide-react"],
+  // },
+  // webpack: (config, { isServer }) => {
+  //   // Handle Sanity Studio client-side dependencies
+  //   if (!isServer) {
+  //     config.resolve.fallback = {
+  //       fs: false,
+  //       net: false,
+  //       tls: false,
+  //     };
+  //   }
+
+  //   // Simple and effective chunk splitting
+  //   if (!isServer) {
+  //     config.optimization.splitChunks = {
+  //       chunks: "all",
+  //       minSize: 20000,
+  //       cacheGroups: {
+  //         sanity: {
+  //           test: /[\\/]node_modules[\\/](@sanity|sanity)[\\/]/,
+  //           name: "sanity",
+  //           chunks: "all",
+  //           priority: 10,
+  //         },
+  //         vendor: {
+  //           test: /[\\/]node_modules[\\/]/,
+  //           name: "vendors",
+  //           chunks: "all",
+  //           priority: -10,
+  //         },
+  //       },
+      // };
+    // }
+
+    // return config;
+  }
+  // Essential security headers
+//   headers: async () => [
+//     {
+//       source: "/:path*",
+//       headers: [
+//         {
+//           key: "X-DNS-Prefetch-Control",
+//           value: "on",
+//         },
+//         {
+//           key: "Strict-Transport-Security",
+//           value: "max-age=31536000; includeSubDomains",
+//         },
+//         {
+//           key: "X-Frame-Options",
+//           value: "SAMEORIGIN",
+//         },
+//         {
+//           key: "X-Content-Type-Options",
+//           value: "nosniff",
+//         },
+//         {
+//           key: "Referrer-Policy",
+//           value: "strict-origin-when-cross-origin",
+//         },
+//       ],
+//     },
+//   ],
+// };
 
 export default nextConfig;
