@@ -11,3 +11,5 @@ export const viewport = {
 };
 
 export const revalidate = 30;
+
+export const dynamic = 'force-dynamic'
