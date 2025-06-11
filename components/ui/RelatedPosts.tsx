@@ -40,7 +40,7 @@ const RelatedPosts = async ({ currentSlug, limit = 3 }: RelatedPostsProps) => {
   if (!posts.length) return null;
   return (
     <div>
-      <h2 className="text-md lg:text-2xl text-center font-semibold mb-4">
+      <h2 className="text-xl lg:text-3xl text-center font-semibold mb-4">
         Related Posts
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">

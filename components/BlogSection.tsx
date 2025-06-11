@@ -30,7 +30,7 @@ const BlogSection = async ({ limit, excludeLatest }: BlogSectionProps) => {
           <h3 className="text-base text-primary font-semibold sm:text-lg">
             Latest News
           </h3>
-          <h2 className="text-5xl text-text font-semibold sm:text-6xl">
+          <h2 className="text-3xl text-text font-semibold sm:text-4xl">
             Our Blog Posts
           </h2>
         </div>
