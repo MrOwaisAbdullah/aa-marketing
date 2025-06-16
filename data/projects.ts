@@ -1,135 +1,71 @@
 const projects = {
   "Web Development":[
     {
-      title: "OceanFrontDubai.com",
+      title: "RukhsarMarriageBureau.com",
       description:
-        "A sophisticated real estate platform offering exceptional properties and services in Dubai.",
-      image: "/assets/projects/oceanfrontdubai.jpg",
-      link: "https://oceanfrontdubai.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Real Estate"],
+        "A sophisticated marriage bureau platform offering exceptional matchmaking services.",
+      image: "/assets/projects/web (3).jpg",
+      link: "https://rukhsarmarriagebureau.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Match Maker", "Marriage Bureau"],
     },
     {
-      title: "ShopSkinzXA.com",
+      title: "NextTripTravels.com",
       description:
-        "An online store specializing in skincare products with a focus on natural and effective solutions.",
-      image: "/assets/projects/shopskinzxa.jpg",
-      link: "https://shopskinzxa.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Skincare", "E-commerce"],
+        "An online travel agency offering personalized trip planning and booking services.",
+      image: "/assets/projects/web (2).jpg",
+      link: "https://nexttriptravels.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Travel", "Booking", "Agency"],
     },
     {
-      title: "SoneriCare.com",
+      title: "IDIOverseasHR.com",
       description:
-        "A beauty and wellness website featuring premium skincare products inspired by nature.",
-      image: "/assets/projects/sonericare.jpg",
-      link: "https://sonericare.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Beauty", "E-commerce"],
-    },
-    {
-      title: "TheBoredRoomX.com",
-      description:
-        "A dynamic platform providing team-building activities and engagement solutions in Dubai.",
-      image: "/assets/projects/theboredroomx.jpg",
-      link: "https://theboredroomx.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Services"],
-    },
-    {
-      title: "UEBrands.PK",
-      description:
-        "A fitness and nutrition brand website showcasing zero-sugar energy drinks and supplements.",
-      image: "/assets/projects/uebrands.jpg",
-      link: "https://uebrands.pk/",
-      tags: ["WordPress", "PHP", "MySQL", "Fitness", "E-commerce"],
-    },
-    {
-      title: "Jawa.pk",
-      description:
-        "A dynamic e-commerce platform showcasing a wide range of products, including the innovative Ball Trimmer.",
-      image: "/assets/projects/jawa.jpg",
-      link: "https://jawa.pk/",
-      tags: ["Shopify", "E-commerce", "Grooming"],
-    },
-    {
-      title: "KemeiStore.pk",
-      description:
-        "The official online store for Kemei, offering a variety of high-quality electronic products with a user-friendly interface.",
-      image: "/assets/projects/kemeistore.jpg",
-      link: "https://kemeistore.pk/",
-      tags: ["Shopify", "E-commerce", "Electronics"],
-    },
-    {
-      title: "MalabisVogue.com",
-      description:
-        "An elegant fashion website featuring custom apparel and bold designs, catering to modern fashion enthusiasts.",
-      image: "/assets/projects/malabisvogue.jpg",
-      link: "https://malabisvogue.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Fashion", "E-commerce"],
-    },
-    {
-      title: "MasterArgoFoods.com",
-      description:
-        "A comprehensive food products website highlighting fresh ingredients and traditional recipes, perfect for culinary enthusiasts.",
-      image: "/assets/projects/masterargofoods.jpg",
-      link: "https://masterargofoods.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Food", "Elementor"],
-    },
-    {
-      title: "MasterSweetne.com",
-      description:
-        "A professional corporate website for Master Sweetener, showcasing their expertise in sweeteners and related products.",
-      image: "/assets/projects/mastersweetne.jpg",
-      link: "https://mastersweetne.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Elementor", "Sweeteners"],
-    },
+        "A comprehensive HR solutions platform catering to overseas employment needs.",
+      image: "/assets/projects/web (1).jpg",
+      link: "https://idioverseas.com/",
+      tags: ["WordPress", "PHP", "MySQL", "HR", "Employment"],
+    }
   ],
   "Social Media Marketing": [
     {
-      title: "Landscape & Gardening Website",
+      title: "Four M Enterprises",
       description:
-        "Created a website for a landscape and gardening service provider, showcasing their expertise.",
-      image: "/assets/placeholder.png",
+        "A dynamic social media marketing campaign for a leading business in the roofing industry.",
+      image: "/assets/projects/social (5).jpg",
       link: "#",
-      tags: ["WordPress", "Business", "SEO"],
+      tags: ["Social Media", "Business", "SEO", "Roofing"],
     },
     {
-      title: "One Rupee Raffle Website",
+      title: "King Broast & Pizza",
       description:
-        "A new and exciting one-rupee raffle website, designed for an engaging user experience.",
-      image: "/assets/placeholder.png",
+        "A vibrant social media presence for a local restaurant specializing in broast and pizza.",
+      image: "/assets/projects/social (4).jpg",
       link: "#",
-      tags: ["WordPress", "E-commerce", "Lottery"],
+      tags: ["Social Media", "Food Delivery", "Restaurant"],
     },
     {
-      title: "Furniture & Interior Design Website",
+      title: "Laliwala BabyShop",
       description:
-        "A premium furniture store website combining stunning visuals and product catalog.",
-      image: "/assets/placeholder.png",
+        "A vibrant social media presence for a local baby shop specializing in quality products.",
+      image: "/assets/projects/social (3).jpg",
       link: "#",
-      tags: ["WordPress", "Interior Design", "Business"],
+      tags: ["Social Media", "E-commerce", "Baby Products"],
     },
     {
-      title: "Coffee Cafe Website",
+      title: "Pizza Crust",
       description:
-        "An engaging website designed for a charming coffee cafe with a unique online presence.",
-      image: "/assets/placeholder.png",
+        "A dynamic social media marketing campaign for a local pizza restaurant.",
+      image: "/assets/projects/social (2).jpg",
       link: "#",
-      tags: ["WordPress", "Cafe", "Local Business"],
+      tags: ["Social Media", "Pizza", "Local Business"],
     },
     {
-      title: "Online Quran Academy Website",
+      title: "Pizza Munch",
       description:
-        "A website for an online Quran academy to communicate their educational offerings.",
-      image: "/assets/placeholder.png",
+        "A dynamic social media marketing campaign for a local pizza restaurant.",
+      image: "/assets/projects/social (1).jpg",
       link: "#",
-      tags: ["WordPress", "Education", "Online Learning"],
-    },
-    {
-      title: "Home Improvement Ecommerce Website",
-      description:
-        "A user-friendly online store for home improvement tools and gadgets.",
-      image: "/assets/placeholder.png",
-      link: "#",
-      tags: ["WordPress", "E-commerce", "Home Improvement"],
-    },
+      tags: ["Social Media", "Pizza", "Local Business"],
+    }
   ],
 };
 
