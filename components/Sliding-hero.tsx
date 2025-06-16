@@ -6,7 +6,7 @@ import { Suspense } from "react"
 
 export default function SlidingHero() {
   return (
-    <div className="relative -top-[90px] min-h-screen pb-20 w-full overflow-hidden bg-gradient-to-br from-primary via-accent to-indigo-900">
+    <div className="relative -top-[90px] min-h-[calc(100vh-5rem)] w-full overflow-hidden bg-gradient-to-br from-primary via-accent to-indigo-900">
       {/* Hero Content - Prioritized */}
       <div className="relative sm:w-1/2 z-10">
         <HeroContent />

@@ -12,7 +12,7 @@ const Typewriter = dynamic(
 
 const HeroContent = () => {
   return (
-    <div className="max-w-7xl mx-auto flex px-5 pt-52 py-10 md:flex-row flex-col items-center">
+    <div className="max-w-7xl mx-auto flex px-5 pt-52 2xl:pl-20 py-10 md:flex-row flex-col items-center">
       <div className="sm:entrance-left lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center lg:w-3/5">
         <h2 className="title-font sm:text-lg text-base font-semibold mb-1 capitalize text-white/90">
           Not just another digital agency.

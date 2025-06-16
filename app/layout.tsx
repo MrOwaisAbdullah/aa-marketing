@@ -27,7 +27,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aamarktng.com"),
-  title: "AA Marketing - Digital Marketing Agency",
+  title: "AA Marketing - #1 Digital Marketing Agency",
   description:
     "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
 };
@@ -76,6 +76,15 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta
+          name="google-site-verification"
+          content="MSjc1GuXl0WP82f_EU5cUst2ijOtX6KR8FuXu9ljD3o"
+        />
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z8ES284P80"
+        ></script>
         <Script
           id="structured-data"
           type="application/ld+json"
