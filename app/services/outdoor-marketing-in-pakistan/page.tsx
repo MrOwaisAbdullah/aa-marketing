@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import OutdoorMarketingService from "@/components/services/OutdoorMarketing";
 
 export const metadata: Metadata = {
-  title: "Outdoor Marketing Services in Pakistan",
+  title: "Affordable Outdoor Marketing Services | Buy Brand Visibility",
   description:
-    "Professional outdoor marketing services to enhance your brand visibility and reach your target audience effectively.",
+    "Buy affordable outdoor marketing services. Boost your brand's visibility with impactful outdoor campaigns that reach your target audience.",
   openGraph: {
-    title: "Outdoor Marketing Services | AA Marketing",
+    title: "Affordable Outdoor Marketing Services | Buy Brand Visibility",
     description:
-      "Professional outdoor marketing services to enhance your brand visibility and reach your target audience effectively.",
+      "Buy affordable outdoor marketing services. Boost your brand's visibility with impactful outdoor campaigns that reach your target audience.",
     url: "https://aamarktng.com/services/outdoor-marketing-in-pakistan",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Outdoor Marketing Services in Pakistan | AA Marketing",
+    title: "Affordable Outdoor Marketing Services | Buy Brand Visibility",
     description:
-      "Professional outdoor marketing services to enhance your brand visibility and reach your target audience effectively.",
+      "Buy affordable outdoor marketing services. Boost your brand's visibility with impactful outdoor campaigns that reach your target audience.",
     images: ["https://aamarktng.com/assets/services/outdoor-marketing.jpg"],
   },
   alternates: {

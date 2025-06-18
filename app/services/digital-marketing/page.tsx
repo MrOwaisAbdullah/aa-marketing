@@ -3,14 +3,15 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Services",
+  title: "Affordable Digital Marketing Services | Buy Growth Solutions",
   description:
-    "Comprehensive digital marketing solutions to grow your online presence. SEO, social media, content marketing, and more.",
+    "Buy affordable digital marketing solutions to grow your business. SEO, PPC, and more to help you reach your target audience and increase sales.",
   openGraph: {
-    title: "Digital Marketing Services | AA Marketing",
+    title: "Affordable Digital Marketing Services | Buy Growth Solutions",
     description:
-      "Comprehensive digital marketing solutions to grow your online presence. SEO, social media, content marketing, and more.",
-    url: "https://aamarktng.com/services/digital-marketing",    images: [
+      "Buy affordable digital marketing solutions to grow your business. SEO, PPC, and more to help you reach your target audience and increase sales.",
+    url: "https://aamarktng.com/services/digital-marketing",
+    images: [
       {
         url: "https://aamarktng.com/assets/services/digital-marketing.jpg",
         width: 1200,
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing Services | AA Marketing",
+    title: "Affordable Digital Marketing Services | Buy Growth Solutions",
     description:
-      "Comprehensive digital marketing solutions to grow your online presence. SEO, social media, content marketing, and more.",
+      "Buy affordable digital marketing solutions to grow your business. SEO, PPC, and more to help you reach your target audience and increase sales.",
     images: ["https://aamarktng.com/assets/services/digital-marketing.jpg"],
   },
   alternates: {

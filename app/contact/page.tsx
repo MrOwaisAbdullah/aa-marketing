@@ -5,13 +5,13 @@ import { Metadata } from "next";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact AA Marketing | Let's Elevate Your Brand",
   description:
-    "Get in touch with AA Marketing. We're here to help you transform your digital presence. Contact us for a free consultation.",
+    "Contact us by phone, email, or form. We're here to help you reach your digital marketing goals and grow your business fast and smart.",
   openGraph: {
-    title: "Contact Us | AA Marketing",
+    title: "Contact AA Marketing | Let's Elevate Your Brand",
     description:
-      "Get in touch with AA Marketing. We're here to help you transform your digital presence. Contact us for a free consultation.",
+      "Contact us by phone, email, or form. We're here to help you reach your digital marketing goals and grow your business fast and smart.",
     url: "https://aamarktng.com/contact",
   },
   alternates: {

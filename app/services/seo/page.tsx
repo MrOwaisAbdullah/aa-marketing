@@ -3,13 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SEO Services",
+  title: "Affordable SEO Services | Buy Expert SEO Solutions",
   description:
-    "Boost your website's visibility and rankings with our professional SEO services.",
+    "Buy affordable SEO services to boost your website's ranking. Improve your online presence and attract more customers with expert SEO solutions.",
   openGraph: {
-    title: "SEO Services | AA Marketing",
+    title: "Affordable SEO Services | Buy Expert SEO Solutions",
     description:
-      "Boost your website's visibility and rankings with our professional SEO services.",
+      "Buy affordable SEO services to boost your website's ranking. Improve your online presence and attract more customers with expert SEO solutions.",
     url: "https://aamarktng.com/services/seo",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services | AA Marketing",
+    title: "Affordable SEO Services | Buy Expert SEO Solutions",
     description:
-      "Boost your website's visibility and rankings with our professional SEO services.",
+      "Buy affordable SEO services to boost your website's ranking. Improve your online presence and attract more customers with expert SEO solutions.",
     images: ["https://aamarktng.com/assets/services/seo.jpg"],
   },
   alternates: {

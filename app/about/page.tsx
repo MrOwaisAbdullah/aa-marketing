@@ -8,13 +8,13 @@ import Testimonials from "@/components/Testimonials";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About AA Marketing | Your Digital Growth Partner",
   description:
-    "Learn about AA Marketing - your trusted partner in digital transformation. Discover our mission, vision, and the team behind our success.",
+    "Learn about our mission to help your business grow using creative ideas and new digital marketing tools that bring success and more customers.",
   openGraph: {
-    title: "About Us | AA Marketing",
+    title: "About AA Marketing | Your Digital Growth Partner",
     description:
-      "Learn about AA Marketing - your trusted partner in digital transformation. Discover our mission, vision, and the team behind our success.",
+      "Learn about our mission to help your business grow using creative ideas and new digital marketing tools that bring success and more customers.",
     url: "https://aamarktng.com/about",
   },
   alternates: {

@@ -3,13 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Logo Design Services",
+  title: "Affordable Logo Design Services | Buy Custom Logos",
   description:
-    "Professional logo design services to create unique and memorable brand identities.",
+    "Buy affordable logo design services. Get a custom logo that reflects your brand's identity and sets you apart from the competition.",
   openGraph: {
-    title: "Logo Design Services | AA Marketing",
+    title: "Affordable Logo Design Services | Buy Custom Logos",
     description:
-      "Professional logo design services to create unique and memorable brand identities.",
+      "Buy affordable logo design services. Get a custom logo that reflects your brand's identity and sets you apart from the competition.",
     url: "https://aamarktng.com/services/logo-design",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo Design Services | AA Marketing",
+    title: "Affordable Logo Design Services | Buy Custom Logos",
     description:
-      "Professional logo design services to create unique and memorable brand identities.",
+      "Buy affordable logo design services. Get a custom logo that reflects your brand's identity and sets you apart from the competition.",
     images: ["https://aamarktng.com/assets/services/logo-design.jpg"],
   },
   alternates: {

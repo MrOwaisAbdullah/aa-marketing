@@ -3,12 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "App Development Services",
+  title: "Affordable App Development Services | Buy Custom Apps",
   description:
-    "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
-  openGraph: {    title: "App Development Services | AA Marketing",
+    "Buy affordable app development services for custom iOS and Android apps. Get a mobile solution that suits your business needs at AA Marketing.",
+  openGraph: {
+    title: "Affordable App Development Services | Buy Custom Apps",
     description:
-      "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
+      "Buy affordable app development services for custom iOS and Android apps. Get a mobile solution that suits your business needs at AA Marketing.",
     url: "https://aamarktng.com/services/app-development",
     images: [
       {
@@ -20,9 +21,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",    title: "App Development Services | AA Marketing",
+    card: "summary_large_image",
+    title: "Affordable App Development Services | Buy Custom Apps",
     description:
-      "Custom mobile app development services to bring your ideas to life with cutting-edge technology and user-centric design.",
+      "Buy affordable app development services for custom iOS and Android apps. Get a mobile solution that suits your business needs at AA Marketing.",
     images: ["/assets/services/app-development.jpg"],
   },
   alternates: {

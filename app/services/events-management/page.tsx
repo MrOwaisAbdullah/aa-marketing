@@ -3,13 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events Management Services",
+  title: "Affordable Event Management Services | Buy Seamless Planning",
   description:
-    "Professional events planning and management services to create memorable experiences for your brand and audience.",
+    "Buy affordable event management services for flawless planning. Let us handle every detail to make your event a success with AA Marketing.",
   openGraph: {
-    title: "Events Management Services | AA Marketing",
+    title: "Affordable Event Management Services | Buy Seamless Planning",
     description:
-      "Professional events planning and management services to create memorable experiences for your brand and audience.",
+      "Buy affordable event management services for flawless planning. Let us handle every detail to make your event a success with AA Marketing.",
     url: "https://aamarktng.com/services/events-management",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Events Management Services | AA Marketing",
+    title: "Affordable Event Management Services | Buy Seamless Planning",
     description:
-      "Professional events planning and management services to create memorable experiences for your brand and audience.",
+      "Buy affordable event management services for flawless planning. Let us handle every detail to make your event a success with AA Marketing.",
     images: ["https://aamarktng.com/assets/services/events-management.jpg"],
   },
   alternates: {

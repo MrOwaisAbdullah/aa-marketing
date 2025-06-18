@@ -3,13 +3,13 @@ import InfluencerMarketingService from "@/components/services/InfluencerMarketin
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Influencer Marketing Services",
+  title: "Affordable Influencer Marketing Services | Buy Brand Growth",
   description:
-    "Strategic influencer marketing solutions to amplify your brand reach and engagement through authentic partnerships.",
+    "Buy affordable influencer marketing services. Boost your brand's visibility by connecting with top influencers to reach a wider audience.",
   openGraph: {
-    title: "Influencer Marketing Services | AA Marketing",
+    title: "Affordable Influencer Marketing Services | Buy Brand Growth",
     description:
-      "Strategic influencer marketing solutions to amplify your brand reach and engagement through authentic partnerships.",
+      "Buy affordable influencer marketing services. Boost your brand's visibility by connecting with top influencers to reach a wider audience.",
     url: "https://aamarktng.com/services/influencer-marketing",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Influencer Marketing Services | AA Marketing",
+    title: "Affordable Influencer Marketing Services | Buy Brand Growth",
     description:
-      "Strategic influencer marketing solutions to amplify your brand reach and engagement through authentic partnerships.",
+      "Buy affordable influencer marketing services. Boost your brand's visibility by connecting with top influencers to reach a wider audience.",
     images: ["https://aamarktng.com/assets/services/influencer-marketing.jpg"],
   },
   alternates: {

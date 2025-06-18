@@ -14,9 +14,9 @@ const Testimonials = lazy(() => import("@/components/Testimonials"));
 const BlogSection = lazy(() => import("@/components/BlogSection"));
 
 export const metadata: Metadata = {
-  title: "AA Marketing | Thinking, Making, Result",
+  title: "AA Marketing | Digital Marketing & Creative Solutions",
   description:
-    "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
+    "Boost your business with digital marketing, SEO, social media, AI tools, and creative design. Grow your brand with AA Marketing today!",
   alternates: {
     canonical: "/",
   },

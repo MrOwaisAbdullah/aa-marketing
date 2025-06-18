@@ -23,6 +23,14 @@ const projects = {
       image: "/assets/projects/web (1).jpg",
       link: "https://idioverseas.com/",
       tags: ["WordPress", "PHP", "MySQL", "HR", "Employment"],
+    },
+    {
+      title: "FourMEnterprises.com",
+      description:
+        "Website for a leading business in the roofing material industry.",
+      image: "/assets/projects/web (4).jpg",
+      link: "https://fourmenterprises.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Roofing"],
     }
   ],
   "Social Media Marketing": [

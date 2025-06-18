@@ -4,13 +4,13 @@ import { Metadata } from "next";
 import CtaSection from "@/components/CtaSection";
 
 export const metadata: Metadata = {
-  title: "Our Services",
+  title: "Our Services | SEO, Web Design & AI Chatbots",
   description:
-    "Explore our comprehensive digital services including web development, digital marketing, UI/UX design, app development, SEO, and more.",
+    "Explore our services: SEO, ads, web design, social media, AI chatbots, and more. We help your business grow with smart digital marketing solutions.",
   openGraph: {
-    title: "Our Services | AA Marketing",
+    title: "Our Services | SEO, Web Design & AI Chatbots",
     description:
-      "Explore our comprehensive digital services including web development, digital marketing, UI/UX design, app development, SEO, and more.",
+      "Explore our services: SEO, ads, web design, social media, AI chatbots, and more. We help your business grow with smart digital marketing solutions.",
     url: "https://aamarktng.com/services",
   },
   alternates: {
