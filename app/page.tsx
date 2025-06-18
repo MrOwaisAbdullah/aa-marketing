@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import SlidingHero from "@/components/Sliding-hero";
 import Link from "next/link";
+import { Metadata } from "next";
 
 // Dynamically import components not needed for initial render
 const About = lazy(() => import("@/components/About"));
@@ -11,6 +12,15 @@ const ServiceScroll = lazy(() => import("@/components/ServiceScroll"));
 const LogoSlider = lazy(() => import("@/components/ui/LogoSlider"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const BlogSection = lazy(() => import("@/components/BlogSection"));
+
+export const metadata: Metadata = {
+  title: "AA Marketing | Thinking, Making, Result",
+  description:
+    "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 // Configure page to be statically generated
 export const generateStaticParams = async () => {

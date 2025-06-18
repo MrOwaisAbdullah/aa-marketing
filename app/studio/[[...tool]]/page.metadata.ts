@@ -2,6 +2,13 @@
 export const metadata = {
   title: "AA Marketing Studio",
   description: "Admin dashboard for content management",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "/studio",
+  },
 };
 
 export const viewport = {

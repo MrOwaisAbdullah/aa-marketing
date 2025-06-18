@@ -228,13 +228,13 @@ const ServiceScroll = () => {
             <p className="text-[#dc5b5b] font-medium mb-4 tracking-wide uppercase text-md">
               Why AA Marketing?
             </p>
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-8 leading-tight">
               Discover Our
               <span className="block bg-gradient-to-r from-[#dc5b5b] to-[#6a59ee] bg-clip-text text-transparent">
                 Expertise
               </span>
               as a Marketing Agency
-            </h1>
+            </h2>
             <p className="text-gray-300 text-md leading-relaxed mb-8">
               As a full-service marketing agency, we handle all your digital
               needs under one roof. Our custom marketing services include

@@ -5,6 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { CustomComponent } from "@/components/CustomComponent";
 import { TableOfContents } from "@/components/ui/TableOfContents";
 import RelatedPosts from "@/components/ui/RelatedPosts";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const query = `*[_type == "post"]{
@@ -14,6 +15,52 @@ export async function generateStaticParams() {
   const slugs = await client.fetch(query);
   const slugRoutes: string[] = slugs.map((slug: { slug: string }) => slug.slug);
   return slugRoutes.map((slug: string) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const { slug } = params;
+
+  const query = `*[_type == "post" && slug.current == "${slug}"]{
+    title,
+    summary,
+    mainImage
+  }[0]`;
+
+  const blog = await client.fetch(query);
+
+  if (!blog) {
+    return {
+      title: "Blog Post Not Found",
+      description: "The requested blog post could not be found.",
+    };
+  }
+
+  return {
+    title: blog.title,
+    description: blog.summary,
+    openGraph: {
+      title: `${blog.title} | AA Marketing`,
+      description: blog.summary,
+      url: `https://aamarktng.com/blog/${slug}`,
+      images: [
+        {
+          url: urlFor(blog.mainImage).url() as string,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${blog.title} | AA Marketing`,
+      description: blog.summary,
+      images: [urlFor(blog.mainImage).url() as string],
+    },
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+  };
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
@@ -83,7 +130,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
             <div className="mt-10 grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 lg:gap-y-5 gap-x-10 mx-auto pl-4 justify-between">
               <div className="flex flex-col border-border">
-                <h1 className="text-sm xl:text-md mb-1">Published Date</h1>
+                <h2 className="text-sm xl:text-md mb-1">Published Date</h2>
                 <p className="text-sm xl:text-md font-medium text-heading">
                   {new Date(blog._createdAt).toLocaleDateString("en-US", {
                     year: "numeric",
@@ -92,7 +139,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </p>
               </div>
               <div className="flex flex-col">
-                <h1 className="text-sm xl:text-md mb-1">Author</h1>
+                <h2 className="text-sm xl:text-md mb-1">Author</h2>
                 <p className="text-sm xl:text-md font-medium text-heading">
                   {blog.author.name}
                 </p>
@@ -104,9 +151,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
         {/* Blog Content */}
         <div className="flex flex-col py-8 md:py-14 border-t-4 lg:border-t-0 border-border pb-14 lg:w-[75%]">
           <div className="border-b-4 border-border px-5 md:px-14 pb-14 md:mr-5">
-          <h1 className="xl:text-lg 2xl:text-xl text-heading mb-3 font-semibold px-4">
+          <h2 className="xl:text-lg 2xl:text-xl text-heading mb-3 font-semibold px-4">
             Summary
-          </h1>
+          </h2>
           <p className="max-w-3xl mr-auto text-sm xl:text-base 2xl:text-lg px-4">
             {blog.summary}
           </p>

@@ -1,5 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Offline",
+  description: "You are currently offline. Please check your internet connection.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "/offline",
+  },
+};
 
 export default function OfflinePage() {
   return (

@@ -101,9 +101,9 @@ const ProjectTabs = ({
                       </div>
 
                       <div className="p-6">
-                        <h1 className="text-xl font-semibold text-text mb-2">
+                        <h3 className="text-xl font-semibold text-text mb-2">
                           {project.title}
-                        </h1>
+                        </h3>
 
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 mb-3">
