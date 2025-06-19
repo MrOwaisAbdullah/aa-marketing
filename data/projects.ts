@@ -1,38 +1,4 @@
 const projects = {
-  "Web Development":[
-    {
-      title: "RukhsarMarriageBureau.com",
-      description:
-        "A sophisticated marriage bureau platform offering exceptional matchmaking services.",
-      image: "/assets/projects/web (3).jpg",
-      link: "https://rukhsarmarriagebureau.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Match Maker", "Marriage Bureau"],
-    },
-    {
-      title: "NextTripTravels.com",
-      description:
-        "An online travel agency offering personalized trip planning and booking services.",
-      image: "/assets/projects/web (2).jpg",
-      link: "https://nexttriptravels.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Travel", "Booking", "Agency"],
-    },
-    {
-      title: "IDIOverseasHR.com",
-      description:
-        "A comprehensive HR solutions platform catering to overseas employment needs.",
-      image: "/assets/projects/web (1).jpg",
-      link: "https://idioverseas.com/",
-      tags: ["WordPress", "PHP", "MySQL", "HR", "Employment"],
-    },
-    {
-      title: "FourMEnterprises.com",
-      description:
-        "Website for a leading business in the roofing material industry.",
-      image: "/assets/projects/web (4).jpg",
-      link: "https://fourmenterprises.com/",
-      tags: ["WordPress", "PHP", "MySQL", "Roofing"],
-    }
-  ],
   "Social Media Marketing": [
     {
       title: "Four M Enterprises",
@@ -73,7 +39,41 @@ const projects = {
       image: "/assets/projects/social (1).jpg",
       link: "#",
       tags: ["Social Media", "Pizza", "Local Business"],
-    }
+    },
+  ],
+  "Web Development": [
+    {
+      title: "RukhsarMarriageBureau.com",
+      description:
+        "A sophisticated marriage bureau platform offering exceptional matchmaking services.",
+      image: "/assets/projects/web (2).jpg",
+      link: "https://rukhsarmarriagebureau.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Match Maker", "Marriage Bureau"],
+    },
+    {
+      title: "NextTripTravels.com",
+      description:
+        "An online travel agency offering personalized trip planning and booking services.",
+      image: "/assets/projects/web (3).jpg",
+      link: "https://nexttriptravels.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Travel", "Booking", "Agency"],
+    },
+    {
+      title: "IDIOverseasHR.com",
+      description:
+        "A comprehensive HR solutions platform catering to overseas employment needs.",
+      image: "/assets/projects/web (1).jpg",
+      link: "https://idioverseas.com/",
+      tags: ["WordPress", "PHP", "MySQL", "HR", "Employment"],
+    },
+    {
+      title: "FourMEnterprises.com",
+      description:
+        "Website for a leading business in the roofing material industry.",
+      image: "/assets/projects/web (4).jpg",
+      link: "https://fourmenterprises.com/",
+      tags: ["WordPress", "PHP", "MySQL", "Roofing"],
+    },
   ],
 };
 
