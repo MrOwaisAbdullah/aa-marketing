@@ -1,3 +1,4 @@
+export const revalidate = 60;
 import { client } from "@/sanity/lib/client";
 import React from "react";
 import BlogCards from "@/components/ui/BlogCards";
