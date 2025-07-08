@@ -79,10 +79,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const blog: PostCard = await client.fetch(query);
 
   return (
-    <article className="flex flex-col min-h-screen mb-20 ">
+    <article className="relative -top-[90px] flex flex-col min-h-screen mb-20 ">
       <div className="relative border-b-4 border-border ">
         <Image
-          className="flex h-[400px] 2xl:h-[700px] w-screen object-cover items-center justify-center"
+          className="flex h-[450px] 2xl:h-[750px] w-screen object-cover items-center justify-center"
           src={urlFor(blog.mainImage).url() as string}
           alt={blog.title}
           width={1000}
