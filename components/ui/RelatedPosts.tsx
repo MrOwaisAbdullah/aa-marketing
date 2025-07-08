@@ -41,7 +41,7 @@ const RelatedPosts = async ({ currentSlug, limit = 3 }: RelatedPostsProps) => {
   const posts = await fetchRelatedPosts(currentSlug, limit);
   if (!posts.length) return null;
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <h2 className="text-xl lg:text-3xl text-center font-semibold mb-4">
         Related Posts
       </h2>
