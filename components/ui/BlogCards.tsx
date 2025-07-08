@@ -9,7 +9,7 @@ const BlogCards = ({ post }: { post: PostCard }) => {
     <div className="flex flex-col gap-4 p-2 hover:scale-[1.03] duration-300 ease-in-out shadow-lg border border-border rounded-lg">
       <Link href={`/blog/${post.slug.current}`}>
         <Image
-          className="rounded-lg w-full"
+          className="rounded-lg w-full h-36 lg:h-44 object-cover"
           src={urlFor(post.mainImage).url() as string}
           alt={post.title}
           width={300}
@@ -48,9 +48,8 @@ const BlogCards = ({ post }: { post: PostCard }) => {
         <p className="text-text opacity-80 line-clamp-2 text-sm">
           {post.summary}
         </p>
-        <div className="flex flex-wrap gap-3 sm:gap-5 mt-2 justify-between items-end">
-          <div className="flex flex-wrap gap-6 sm:gap-10 max-sm:text-xs text-sm xl:text-base 2xl:text-lg sm:justify-between">
-            <div className="flex flex-col gap-1">
+        <div className="flex flex-wrap gap-3 sm:gap-5 mt-2 justify-between items-center">
+          <div className="flex flex-wrap max-sm:text-xs text-sm xl:text-base 2xl:text-lg">
               <p className="text-text opacity-50">
                 {/* Formatting the date */}
                 {new Date(post._createdAt).toLocaleDateString("en-US", {
@@ -58,11 +57,10 @@ const BlogCards = ({ post }: { post: PostCard }) => {
                   month: "long",
                 })}
               </p>
-            </div>
           </div>
           {/* Dynamically adding the slug in Read More Button */}
           <Link href={`/blog/${post.slug.current}`}>
-            <button className="group border-border border-2 rounded-lg py-2 px-4 flex gap-3 sm:mt-0 mt-2">
+            <button className="group border-border border-2 rounded-lg py-1 px-2 flex gap-2 lg:gap-3 sm:mt-0 mt-2">
               Read More{" "}
               <ArrowRight className="text-primary group-hover:-rotate-45 duration-200 " />
             </button>

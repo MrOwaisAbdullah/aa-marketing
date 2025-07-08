@@ -4,7 +4,7 @@ import BlogCards from "@/components/ui/BlogCards";
 import FadeInSection from "./FadeInSection";
 
 
-const BlogSection = async ({ limit, excludeLatest }: BlogSectionProps) => {
+const BlogSection = async ({ limit = 3, excludeLatest }: BlogSectionProps) => {
   // Query to fetch posts for BlogSection
   const query = `*[_type == "post"] | order(_createdAt desc){
       title,
