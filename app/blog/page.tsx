@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
 };
 
+export const revalidate = 60;
+
+
 const page = () => {
   return (
     <div className="min-h-screen my-20 ">

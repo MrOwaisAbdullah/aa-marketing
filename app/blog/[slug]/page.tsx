@@ -7,6 +7,10 @@ import { TableOfContents } from "@/components/ui/TableOfContents";
 import RelatedPosts from "@/components/ui/RelatedPosts";
 import { Metadata } from "next";
 
+export const revalidate = 60;
+
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const query = `*[_type == "post"]{
     "slug":slug.current

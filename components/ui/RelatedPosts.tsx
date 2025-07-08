@@ -1,5 +1,3 @@
-export const revalidate = 60;
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +20,8 @@ interface RelatedPostsProps {
   currentSlug: string;
   limit?: number;
 }
+
+export const revalidate = 60;
 
 export async function fetchRelatedPosts(
   currentSlug: string,
