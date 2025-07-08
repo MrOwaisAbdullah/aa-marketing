@@ -158,13 +158,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {blog.summary}
           </p>
           </div>
-          <section className="max-w-3xl mr-auto text-sm xl:text-base 2xl:text-lg px-5 py-10 md:pl-16">
+          <section className="max-w-3xl mr-auto text-sm xl:text-md 2xl:text-lg px-5 py-10 md:pl-16">
             <PortableText value={blog.content} components={CustomComponent} />
           </section>
         </div>
       </div>
       {/* Related Posts Section */}
-      <div className="maax-w-7xl mx-auto mt-14">
+      <div className="max-w-7xl mx-auto mt-14">
         {/* Map through related posts and render them */}
         <RelatedPosts currentSlug={slug} limit={3} />
       </div>
