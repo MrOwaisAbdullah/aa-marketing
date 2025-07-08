@@ -137,7 +137,7 @@ export const CustomComponent: PortableTextComponents = {
       </blockquote>
     ),
     normal: ({ children }: { children?: ReactNode }) => (
-      <p className="text-base leading-7 mb-6">{children}</p>
+      <p className="text-base lg:text-lg leading-7 mb-6">{children}</p>
     ),
   },
   list: {

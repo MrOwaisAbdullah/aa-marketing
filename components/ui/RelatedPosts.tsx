@@ -21,8 +21,6 @@ interface RelatedPostsProps {
   limit?: number;
 }
 
-export const revalidate = 60;
-
 export async function fetchRelatedPosts(
   currentSlug: string,
   limit = 3
@@ -34,7 +32,7 @@ export async function fetchRelatedPosts(
     mainImage,
     summary
   }`;
-  return await client.fetch(query, { slug: currentSlug, limit });
+  return await client.fetch(query, { slug: currentSlug, limit }, { next: { revalidate: 30 } });
 }
 
 const RelatedPosts = async ({ currentSlug, limit = 3 }: RelatedPostsProps) => {

@@ -17,7 +17,7 @@ const BlogSection = async ({ limit, excludeLatest }: BlogSectionProps) => {
       categories[]->{title}
     }`;
 
-  const blogs = await client.fetch(query);
+  const blogs = await client.fetch(query, {}, { next: { revalidate: 30 } });
 
   let displayedBlogs = limit ? blogs.slice(0, limit) : blogs;
 
