@@ -144,9 +144,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
               <div className="flex flex-col">
                 <h2 className="text-sm xl:text-md mb-1">Author</h2>
-                <p className="text-sm xl:text-md font-medium text-heading">
-                  {blog.author.name}
-                </p>
+                  <p className="text-sm xl:text-md font-medium text-heading">
+                    {blog.author?.name || "Admin"}
+                  </p>
               </div>
             </div>
           </div>
