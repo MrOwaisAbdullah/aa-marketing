@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -21,7 +23,7 @@ interface RelatedPostsProps {
   limit?: number;
 }
 
-export async function fetchRelatedPosts(
+async function fetchRelatedPosts(
   currentSlug: string,
   limit = 3
 ): Promise<RelatedPost[]> {
@@ -32,11 +34,14 @@ export async function fetchRelatedPosts(
     mainImage,
     summary
   }`;
-  return await client.fetch(query, { slug: currentSlug, limit }, { next: { revalidate: 30 } });
+  return await client.fetch(query, { slug: currentSlug, limit });
 }
 
-const RelatedPosts = async ({ currentSlug, limit = 3 }: RelatedPostsProps) => {
-  const posts = await fetchRelatedPosts(currentSlug, limit);
+const RelatedPosts = ({ currentSlug, limit = 3 }: RelatedPostsProps) => {
+  const [posts, setPosts] = useState<RelatedPost[]>([]);
+  useEffect(() => {
+    fetchRelatedPosts(currentSlug, limit).then(setPosts);
+  }, [currentSlug, limit]);
   if (!posts.length) return null;
   return (
     <>

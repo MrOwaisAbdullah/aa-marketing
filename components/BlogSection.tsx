@@ -3,7 +3,6 @@ import React from "react";
 import BlogCards from "@/components/ui/BlogCards";
 import FadeInSection from "./FadeInSection";
 
-export const revalidate = 60;
 
 const BlogSection = async ({ limit, excludeLatest }: BlogSectionProps) => {
   // Query to fetch posts for BlogSection
