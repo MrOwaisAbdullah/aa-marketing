@@ -164,7 +164,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
       {/* Related Posts Section */}
-      <div className="max-w-7xl mx-auto mt-14">
+      <div className="max-w-6xl mx-auto mt-14">
         {/* Map through related posts and render them */}
         <RelatedPosts currentSlug={slug} limit={3} />
       </div>
