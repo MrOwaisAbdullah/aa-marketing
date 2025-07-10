@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
+import { client } from "@/sanity/lib/client";
 
 const baseUrl = "https://aamarktng.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  // Define all routes
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Define all static routes
   const routes = [
     {
       url: baseUrl,
@@ -54,8 +55,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/services/${service}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 0.7,
+    priority: 0.8,
   }));
 
-  return [...routes, ...serviceRoutes];
+  // Fetch blog slugs from Sanity
+  const blogSlugs: { slug: { current: string }; _updatedAt: string }[] =
+    await client.fetch(
+      `*[_type == "post"]{ "slug": slug.current, _updatedAt }`
+    );
+
+  const blogRoutes = blogSlugs.map((blog) => ({
+    url: `${baseUrl}/blog/${blog.slug}`,
+    lastModified: blog._updatedAt ? new Date(blog._updatedAt) : new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  return [...routes, ...serviceRoutes, ...blogRoutes];
 }
