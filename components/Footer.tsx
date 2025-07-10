@@ -33,9 +33,20 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 text-[#dc5b5b]" />
-                <span className="text-white">Savannah, Georgia, U.S.A</span>
+                <div className="text-white">
+                  <div>Asia Center, 2nd Floor, Office 202</div>
+                  <div>Block 13-A, Gulshan-e-Iqbal</div>
+                  <div>Karachi, 74600, Pakistan</div>
+                </div>
               </div>
-
+              <div className="flex items-start">
+                <MapPin className="mr-3 h-5 w-5 text-[#dc5b5b]" />
+                <div className="text-white">
+                  <div>AlSUAIDI Building, Office 205</div>
+                  <div>Al Murar, Deira</div>
+                  <div>Dubai, UAE</div>
+                </div>
+              </div>
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-[#dc5b5b]" />
                 <Link href={"tel:+923352867361"}>
@@ -87,6 +98,14 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
+                  href="/services/graphic-designing"
+                  className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
+                >
+                  Graphic Designing
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/services/web-development"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
@@ -103,60 +122,38 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/app-development"
+                  href="/services/cgi-videos-ads"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
-                  App Development
+                  CGI Videos & Ads
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/influencer-marketing"
+                  href="/services/social-media-marketing"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
-                  Influencer Marketing
+                  Social Media Marketing
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/ui-ux-design"
+                  href="/services/ai-agents-chatbot"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
-                  UI/UX Design
+                  AI Chatbots & Agents
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/services/seo"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
-                  Search Engine Optimization
+                  SEO
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/services/logo-design"
-                  className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
-                >
-                  Logo Design
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/events-management"
-                  className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
-                >
-                  Events Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/outdoor-marketing-in-pakistan"
-                  className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
-                >
-                  Outdoor Marketing
-                </Link>
-              </li>
+
             </ul>
           </div>
 

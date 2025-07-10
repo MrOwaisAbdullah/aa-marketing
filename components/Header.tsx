@@ -11,18 +11,13 @@ import ThemeSwitcher from "./ui/ThemeSwitcher";
 import ThemeLogo from "./ui/ThemeLogo";
 
 const services = [
+  { name: "Graphic Designing", href: "/services/graphic-designing" },
   { name: "Web Development", href: "/services/web-development" },
   { name: "Digital Marketing", href: "/services/digital-marketing" },
-  { name: "UI/UX Design", href: "/services/ui-ux-design" },
-  { name: "App Development", href: "/services/app-development" },
-  { name: "Search Engine Optimization", href: "/services/seo" },
-  { name: "Influencer Marketing", href: "/services/influencer-marketing" },
-  { name: "Logo Design", href: "/services/logo-design" },
-  { name: "Events Management", href: "/services/events-management" },
-  {
-    name: "Outdoor Marketing",
-    href: "/services/outdoor-marketing-in-pakistan",
-  },
+  { name: "CGI Videos & Ads", href: "/services/cgi-videos-ads" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+  { name: "AI Chatbots & Agents", href: "/services/ai-agents-chatbot" },
+  { name: "SEO", href: "/services/seo" },
 ];
 
 // Key routes to prefetch
@@ -36,7 +31,7 @@ const keyRoutes = [
   "/contact",
   "/services/web-development",
   "/services/digital-marketing",
-  "/services/app-development",
+  "/services/social-media-marketing",
 ];
 
 const Header = () => {
@@ -191,7 +186,7 @@ const Header = () => {
           >
             Home
           </Link>{" "}
-                    <Link
+          <Link
             href={"/blog"}
             onClick={handleLinkClick}
             className="mr-5 font-medium text-base lg:text-white text-text hover:text-primary transition-colors"

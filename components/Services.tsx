@@ -7,11 +7,11 @@ import { PulsingLoader } from "./ui/PulseLoader";
 
 const allServices = [
   {
-    image: "/assets/services/logo.jpg",
-    title: "Logo Design",
+    image: "/assets/services/graphic-designing.jpg",
+    title: "Graphic Designing",
     description:
-      "Compeling content that tells your brand story and connects with your audience across all platforms.",
-    link: "/services/logo-design",
+      "Creative graphic design for your brand: social media posts, logos, ads, business cards, and more.",
+    link: "/services/graphic-designing",
   },
   {
     image: "/assets/services/web-development.jpg",
@@ -21,41 +21,6 @@ const allServices = [
     link: "/services/web-development",
   },
   {
-    image: "/assets/services/app-development.jpg",
-    title: "App Development",
-    description:
-      "Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.",
-    link: "/services/app-development",
-  },
-  {
-    image: "/assets/services/influencer-marketing.jpg",
-    title: "Influencer Marketing",
-    description:
-      "Data analysis and reporting to measure performance and optimize your digital marketing strategies.",
-    link: "/services/influencer-marketing",
-  },
-  {
-    image: "/assets/services/seo.jpg",
-    title: "SEO",
-    description:
-      "Strategic digital solutions tailored to elevate your brand's online presence and drive measurable results.",
-    link: "/services/seo",
-  },
-  {
-    image: "/assets/services/ui-ux.jpg",
-    title: "UI/UX Design",
-    description:
-      "User-centered design that creates intuitive, engaging interfaces to enhance user satisfaction and conversion.",
-    link: "/services/ui-ux-design",
-  },
-  {
-    image: "/assets/services/events.jpg",
-    title: "Events Management",
-    description:
-      "Strategic social media management to build community, increase engagement, and drive brand awareness.",
-    link: "/services/events-management",
-  },
-  {
     image: "/assets/services/digital-marketing.jpg",
     title: "Digital Marketing",
     description:
@@ -63,11 +28,25 @@ const allServices = [
     link: "/services/digital-marketing",
   },
   {
-    image: "/assets/services/outdoor-marketing.jpg",
-    title: "Outdoor Marketing",
+    image: "/assets/services/cgi-videos.jpg",
+    title: "CGI Videos & Ads",
     description:
-      "Innovative outdoor marketing strategies that capture attention and drive foot traffic to your business.",
-    link: "/services/outdoor-marketing",
+      "Visually impactful CGI videos and commercial ads to make your brand stand out everywhere.",
+    link: "/services/cgi-videos-ads",
+  },
+  {
+    image: "/assets/services/social-media.jpg",
+    title: "Social Media Marketing",
+    description:
+      "Grow your brand with expert social media marketing. Content creation, management, and advertising for all major platforms.",
+    link: "/services/social-media-marketing",
+  },
+  {
+    image: "/assets/services/ai-chatbot.jpg",
+    title: "AI Chatbots & Agents",
+    description:
+      "Automate smarter with AI chatbots and intelligent agents for 24/7 support and task automation.",
+    link: "/services/ai-agents-chatbot",
   },
 ];
 

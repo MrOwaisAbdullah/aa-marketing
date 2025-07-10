@@ -40,15 +40,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Add service pages
   const services = [
+    "graphic-designing",
     "web-development",
     "digital-marketing",
-    "ui-ux-design",
-    "app-development",
+    "cgi-videos-ads",
+    "social-media-marketing",
+    "ai-agents-chatbot",
     "seo",
-    "influencer-marketing",
-    "logo-design",
-    "events-management",
-    "outdoor-marketing",
   ];
 
   const serviceRoutes = services.map((service) => ({
