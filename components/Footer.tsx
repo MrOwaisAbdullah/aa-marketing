@@ -150,7 +150,7 @@ export default function Footer() {
                   href="/services/seo"
                   className="inline-block text-text/80 transition-colors hover:text-[#dc5b5b]"
                 >
-                  SEO
+                  Search Engine Optimization
                 </Link>
               </li>
 

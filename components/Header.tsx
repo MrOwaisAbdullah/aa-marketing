@@ -17,7 +17,7 @@ const services = [
   { name: "CGI Videos & Ads", href: "/services/cgi-videos-ads" },
   { name: "Social Media Marketing", href: "/services/social-media-marketing" },
   { name: "AI Chatbots & Agents", href: "/services/ai-agents-chatbot" },
-  { name: "SEO", href: "/services/seo" },
+  { name: "Search Engine Optimization", href: "/services/seo" },
 ];
 
 // Key routes to prefetch
