@@ -163,7 +163,7 @@ export default function CgiVideosService() {
             answer: (
               <>
                 You can use it for product launches, animated ads, explainer videos, or to
-                showcase concepts that aren't built yet. It&apos;s flexible and works across all
+                showcase concepts that aren&apos;t built yet. It&apos;s flexible and works across all
                 digital platforms.
               </>
             ),

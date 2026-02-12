@@ -81,10 +81,11 @@ export default function RootLayout({
           content="MSjc1GuXl0WP82f_EU5cUst2ijOtX6KR8FuXu9ljD3o"
         />
         {/* <!-- Google tag (gtag.js) --> */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-Z8ES284P80"
-        ></script>
+          strategy="afterInteractive"
+        />
         <Script
           id="structured-data"
           type="application/ld+json"
