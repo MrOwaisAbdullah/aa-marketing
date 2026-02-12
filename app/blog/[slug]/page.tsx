@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "@portabletext/react";
@@ -39,6 +40,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
 
+  const imageUrl = blog.mainImage ? urlFor(blog.mainImage).url() as string : undefined;
+
   return {
     title: blog.title,
     description: blog.summary,
@@ -46,20 +49,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: `${blog.title} | AA Marketing`,
       description: blog.summary,
       url: `https://aamarktng.com/blog/${slug}`,
-      images: [
-        {
-          url: urlFor(blog.mainImage).url() as string,
-          width: 1200,
-          height: 630,
-          alt: blog.title,
-        },
-      ],
+      ...(imageUrl && {
+        images: [
+          {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: blog.title,
+          },
+        ],
+      }),
     },
     twitter: {
       card: "summary_large_image",
       title: `${blog.title} | AA Marketing`,
       description: blog.summary,
-      images: [urlFor(blog.mainImage).url() as string],
+      ...(imageUrl && { images: [imageUrl] }),
     },
     alternates: {
       canonical: `/blog/${slug}`,
@@ -82,16 +87,20 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const blog: PostCard = await client.fetch(query);
 
+  if (!blog) {
+    notFound();
+  }
+
   return (
     <article className="relative -top-[90px] flex flex-col min-h-screen mb-20 ">
       <div className="relative border-b-4 border-border ">
-        <Image
+        {blog.mainImage ? <Image
           className="flex h-[450px] 2xl:h-[750px] w-screen object-cover items-center justify-center"
           src={urlFor(blog.mainImage).url() as string}
           alt={blog.title}
           width={1000}
           height={800}
-        />
+        /> : <div className="flex h-[450px] 2xl:h-[750px] w-screen bg-gray-800 items-center justify-center"><span className="text-white text-2xl">No Image Available</span></div>}
         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/90 from-15% via-black/50 to-transparent">
           <h1
             className={`absolute bottom-10 left-0 right-0 mx-auto w-fit text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center text-white`}
