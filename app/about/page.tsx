@@ -8,7 +8,7 @@ import Testimonials from "@/components/Testimonials";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "About AA Marketing | Your Digital Growth ",
+  title: "About AA Marketing | Your Digital Growth Partner",
   description:
     "Learn about our mission to help your business grow using creative ideas and new digital marketing tools that bring success and more customers.",
   openGraph: {
