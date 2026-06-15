@@ -6,13 +6,13 @@ import { Metadata } from "next";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Our Projects & Portfolio",
+  title: "Our Projects - Proven Work & Client Success Stories",
   description:
-    "Explore our portfolio of successful digital projects. See how we've helped businesses transform their online presence with our expertise.",
+    "Explore AA Marketing's portfolio of successful campaigns, websites & creative projects. Real results for real brands. View our work now!",
   openGraph: {
-    title: "Our Projects | AA Marketing",
+    title: "Our Projects - Proven Work & Client Success Stories | AA Marketing",
     description:
-      "Explore our portfolio of successful digital projects. See how we've helped businesses transform their online presence with our expertise.",
+      "Explore AA Marketing's portfolio of successful campaigns, websites & creative projects. Real results for real brands. View our work now!",
     url: "https://aamarktng.com/projects",
   },
   alternates: {

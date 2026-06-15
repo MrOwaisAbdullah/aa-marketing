@@ -27,9 +27,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aamarktng.com"),
-  title: "AA Marketing - #1 Digital Marketing Agency",
+  title: {
+    default: "Best Digital Marketing Agency | AA Marketing",
+    template: "%s | AA Marketing",
+  },
   description:
-    "AA Marketing is a full-service digital agency committed to helping mid-sized businesses enhance their online presence and achieve their marketing goals.",
+    "Grow your business with AA Marketing - experts in SEO, web development, social media & CGI ads. Get results-driven strategies. Contact us today!",
 };
 
 const jsonLd = {

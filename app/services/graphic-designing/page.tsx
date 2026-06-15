@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import GraphicDesignService from "@/components/services/GraphicDesign";
 
 export const metadata: Metadata = {
-  title: "Professional Graphic Designing Services | AA Marketing",
+  title: "Professional Graphic Design Services",
   description:
-    "Get creative and professional graphic designing services for your brand. Logos, branding, and more to make your business stand out.",
+    "Stand out with stunning visuals. AA Marketing creates logos, branding, and marketing designs that captivate audiences. View our portfolio now!",
   openGraph: {
-    title: "Professional Graphic Designing Services | AA Marketing",
+    title: "Professional Graphic Design Services | AA Marketing",
     description:
-      "Get creative and professional graphic designing services for your brand. Logos, branding, and more to make your business stand out.",
+      "Stand out with stunning visuals. AA Marketing creates logos, branding, and marketing designs that captivate audiences. View our portfolio now!",
     url: "https://aamarktng.com/services/graphic-designing",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Graphic Designing Services | AA Marketing",
+    title: "Professional Graphic Design Services | AA Marketing",
     description:
-      "Get creative and professional graphic designing services for your brand. Logos, branding, and more to make your business stand out.",
+      "Stand out with stunning visuals. AA Marketing creates logos, branding, and marketing designs that captivate audiences. View our portfolio now!",
     images: ["https://aamarktng.com/assets/services/graphic-designing.jpg"],
   },
   alternates: {

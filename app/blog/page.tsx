@@ -3,13 +3,13 @@ import BlogSection from "@/components/BlogSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AA Marketing Blog | Insights & Tips for Digital Success",
+  title: "Marketing Blog: Tips, Trends & Strategies",
   description:
-    "Get the latest news and easy tips on digital marketing and design. Learn how to grow your business and stay ahead with simple, smart ideas.",
+    "Explore expert articles on SEO, digital marketing, content strategy & AI tools. Stay ahead of the curve with AA Marketing's blog. Read now!",
   openGraph: {
-    title: "AA Marketing Blog | Insights & Tips for Digital Success",
+    title: "Marketing Blog: Tips, Trends & Strategies | AA Marketing",
     description:
-      "Get the latest news and easy tips on digital marketing and design. Learn how to grow your business and stay ahead with simple, smart ideas.",
+      "Explore expert articles on SEO, digital marketing, content strategy & AI tools. Stay ahead of the curve with AA Marketing's blog. Read now!",
     url: "https://aamarktng.com/blog",
   },
   alternates: {

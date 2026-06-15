@@ -3,13 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Social Media Marketing Services | AA Marketing",
+  title: "Social Media Marketing Services | Grow Your Brand Fast",
   description:
-    "Grow your brand with expert social media marketing. Content creation, management, and advertising for all major platforms.",
+    "Reach millions with targeted social media campaigns. AA Marketing manages your presence on Instagram, Facebook & more. Get started now!",
   openGraph: {
-    title: "Social Media Marketing Services | AA Marketing",
+    title: "Social Media Marketing Services | Grow Your Brand Fast",
     description:
-      "Grow your brand with expert social media marketing. Content creation, management, and advertising for all major platforms.",
+      "Reach millions with targeted social media campaigns. AA Marketing manages your presence on Instagram, Facebook & more. Get started now!",
     url: "https://aamarktng.com/services/social-media-marketing",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Media Marketing Services | AA Marketing",
+    title: "Social Media Marketing Services | Grow Your Brand Fast",
     description:
-      "Grow your brand with expert social media marketing. Content creation, management, and advertising for all major platforms.",
+      "Reach millions with targeted social media campaigns. AA Marketing manages your presence on Instagram, Facebook & more. Get started now!",
     images: ["https://aamarktng.com/assets/services/social-media.jpg"],
   },
   alternates: {

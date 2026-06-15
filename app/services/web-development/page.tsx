@@ -2,13 +2,13 @@ import WebDevelopmentService from "@/components/services/WebDevelopment";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Affordable Web Development Services | Buy Custom Websites",
+  title: "Web Development Services - Fast, Modern & Scalable",
   description:
-    "Buy affordable web development services. Get a custom website that fits your business needs. Start your online presence with AA Marketing today.",
+    "Build a powerful online presence with AA Marketing's web development. Custom websites, optimized for speed & conversions. Get a free quote today!",
   openGraph: {
-    title: "Affordable Web Development Services | Buy Custom Websites",
+    title: "Web Development Services - Fast, Modern & Scalable",
     description:
-      "Buy affordable web development services. Get a custom website that fits your business needs. Start your online presence with AA Marketing today.",
+      "Build a powerful online presence with AA Marketing's web development. Custom websites, optimized for speed & conversions. Get a free quote today!",
     url: "https://aamarktng.com/services/web-development",
     images: [
       {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Affordable Web Development Services | Buy Custom Websites",
+    title: "Web Development Services - Fast, Modern & Scalable",
     description:
-      "Buy affordable web development services. Get a custom website that fits your business needs. Start your online presence with AA Marketing today.",
+      "Build a powerful online presence with AA Marketing's web development. Custom websites, optimized for speed & conversions. Get a free quote today!",
     images: ["https://aamarktng.com/assets/services/web-development.jpg"],
   },
   alternates: {

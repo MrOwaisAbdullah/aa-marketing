@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import AIChatbotsService from "@/components/services/AiChatbot";
 
 export const metadata: Metadata = {
-  title: "AI Chatbots & Intelligent Agents | AA Marketing",
+  title: "AI Chatbot & Agent Services | Automate & Scale Faster",
   description:
-    "Automate smarter with AI chatbots and intelligent agents from AA Marketing. 24/7 support, task automation, and seamless customer experiences.",
+    "Deploy smart AI agents and chatbots that engage customers 24/7. AA Marketing builds custom AI solutions for your business. Book a demo today!",
   openGraph: {
-    title: "AI Chatbots & Intelligent Agents | AA Marketing",
+    title: "AI Chatbot & Agent Services | Automate & Scale Faster",
     description:
-      "Automate smarter with AI chatbots and intelligent agents from AA Marketing. 24/7 support, task automation, and seamless customer experiences.",
+      "Deploy smart AI agents and chatbots that engage customers 24/7. AA Marketing builds custom AI solutions for your business. Book a demo today!",
     url: "https://aamarktng.com/services/ai-agents-chatbot",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Chatbots & Intelligent Agents | AA Marketing",
+    title: "AI Chatbot & Agent Services | Automate & Scale Faster",
     description:
-      "Automate smarter with AI chatbots and intelligent agents from AA Marketing. 24/7 support, task automation, and seamless customer experiences.",
+      "Deploy smart AI agents and chatbots that engage customers 24/7. AA Marketing builds custom AI solutions for your business. Book a demo today!",
     images: ["https://aamarktng.com/assets/services/ai-chatbot.jpg"],
   },
   alternates: {

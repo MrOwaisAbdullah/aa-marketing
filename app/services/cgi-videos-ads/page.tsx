@@ -3,13 +3,13 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CGI Videos & Commercial Ad Creatives | AA Marketing",
+  title: "CGI Video Ads - Stunning 3D Marketing for Your Brand",
   description:
-    "Create visually impactful CGI videos and commercial ads with AA Marketing. Next-level CGI that grabs attention and drives results for your brand.",
+    "Captivate your audience with cinematic CGI video ads. AA Marketing creates jaw-dropping 3D visuals that convert viewers into customers. See examples!",
   openGraph: {
-    title: "CGI Videos & Commercial Ad Creatives | AA Marketing",
+    title: "CGI Video Ads - Stunning 3D Marketing for Your Brand",
     description:
-      "Create visually impactful CGI videos and commercial ads with AA Marketing. Next-level CGI that grabs attention and drives results for your brand.",
+      "Captivate your audience with cinematic CGI video ads. AA Marketing creates jaw-dropping 3D visuals that convert viewers into customers. See examples!",
     url: "https://aamarktng.com/services/cgi-videos-ads",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CGI Videos & Commercial Ad Creatives | AA Marketing",
+    title: "CGI Video Ads - Stunning 3D Marketing for Your Brand",
     description:
-      "Create visually impactful CGI videos and commercial ads with AA Marketing. Next-level CGI that grabs attention and drives results for your brand.",
+      "Captivate your audience with cinematic CGI video ads. AA Marketing creates jaw-dropping 3D visuals that convert viewers into customers. See examples!",
     images: ["https://aamarktng.com/assets/services/cgi-videos.jpg"],
   },
   alternates: {
